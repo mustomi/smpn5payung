@@ -1,0 +1,96 @@
+.my-navbar {
+    float: right;
+}
+
+.navMenu:hover {
+    background-color: blue;
+    border-radius: 5px;
+    color: black;
+}
+
+.dropdown-item:hover {
+    box-shadow: 4px 4px 10px #685a5a;
+}
+
+/* css halaman beranda */
+
+.mediaSosial a {
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.carousel {
+    margin-top: 60px;
+}
+
+.hubungi a {
+    font-size: 18px;
+}
+
+.card {
+    cursor: pointer;
+    box-shadow: 5px 10px 20px #605f64;
+}
+
+.card:hover {
+    box-shadow: none;
+}
+
+.card-body a {
+    text-decoration: none;
+}
+
+.publish {
+    text-align: left;
+    font-size: 10px;
+}
+
+/* css halaman sejarah */
+
+#sejarah-sekolah {
+    margin-top: 60px;
+}
+
+.brand-sekolah {
+    display: flex;
+    width: 100px;
+    height: 120px;
+}
+
+
+/* css halaman visi misi */
+
+/* css halaman pengumuman */
+#halaman-pengumuman {
+    margin-top: 60px;
+}
+
+/* footer */
+
+.alamat {
+    color: white;
+}
+
+.medsos {
+    color: white;
+}
+
+.medsos a {
+    text-decoration: none;
+    color: white;
+}
+
+/* all in one */
+
+/* mode malam */
+.dark {
+    background-color: black;
+    color: white;
+}
+
+.light {
+    background-color: white;
+    color: black;
+}
+
+
