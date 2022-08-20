@@ -70,6 +70,14 @@
     margin-top: 60px;
 }
 
+.menuBerita {
+    border-right: 1px solid white;
+}
+
+.menuBerita:hover {
+    cursor: pointer;
+    color: gold;
+}
 
 
 /* footer */
