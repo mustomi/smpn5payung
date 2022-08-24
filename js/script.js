@@ -36,6 +36,9 @@ const listButtonJuliTutup = document.getElementById("list-button-juli-tutup")
 const listArsipAgust = document.getElementById("list-arsip-agustus")
 const listButtonAgust = document.getElementById("list-button-agustus")
 const listButtonAgustTutup = document.getElementById("list-button-agustus-tutup")
+const listArsipSept = document.getElementById("list-arsip-september")
+const listButtonSept = document.getElementById("list-button-september")
+const listButtonSeptTutup = document.getElementById("list-button-september-tutup")
 
 
 const Beranda = () => {
@@ -153,4 +156,16 @@ const ListArsipAgustusTutup = () => {
     listArsipAgust.style.display = "none"
     listButtonAgust.style.display = "inline-block"
     listButtonAgustTutup.style.display = "none"
+}
+
+const ListArsipSeptember = () => {
+    listArsipSept.style.display = "block";
+    listButtonSept.style.display = "none";
+    listButtonSeptTutup.style.display = "inline-block";
+}
+
+const ListArsipSeptemberTutup = () => {
+    listArsipSept.style.display = "none";
+    listButtonSept.style.display = "inline-block";
+    listButtonSeptTutup.style.display = "none";
 }
