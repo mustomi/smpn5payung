@@ -30,6 +30,8 @@ const beritaSatu = document.getElementById("berita-u1")
 const beritaDua = document.getElementById("berita-u2")
 const beritaTiga = document.getElementById("berita-u3")
 const beritaEmpat = document.getElementById("berita-u4")
+const kartuMedsos = document.getElementById("halaman-kartu-medsos")
+const kartuMedsosAktif = document.getElementById("kartu-medsos-aktif")
 const listArsipJuli = document.getElementById("list-arsip-juli")
 const listButtonJuli = document.getElementById("list-button-juli")
 const listButtonJuliTutup = document.getElementById("list-button-juli-tutup")
@@ -46,11 +48,13 @@ const Beranda = () => {
     berandaAktif.classList.add('active')
     pengumumanAktif.classList.remove('active')
     beritaAktif.classList.remove('active')
+    kartuMedsosAktif.classList.remove('active')
     beranda.style.display = "block"
     sejarah.style.display = "none"
     visiMisi.style.display = "none"
     pengumuman.style.display = "none"
     berita.style.display = "none"
+    kartuMedsos.style.display = "none"
 }
 
 const Sejarah = () => {
@@ -58,12 +62,14 @@ const Sejarah = () => {
     berandaAktif.classList.remove('active')
     pengumumanAktif.classList.remove('active')
     beritaAktif.classList.remove('active')
+    kartuMedsosAktif.classList.remove('active')
     sejarah.style.display = "block"
     beranda.style.display = "none"
     isiSejarah.style.display = "block"
     visiMisi.style.display = "none"
     pengumuman.style.display = "none"
     berita.style.display = "none"
+    kartuMedsos.style.display = "none"
 }
 
 const VisiMisi = () => {
@@ -71,12 +77,14 @@ const VisiMisi = () => {
     berandaAktif.classList.remove('active')
     pengumumanAktif.classList.remove('active')
     beritaAktif.classList.remove('active')
+    kartuMedsosAktif.classList.remove('active')
     sejarah.style.display = "block"
     visiMisi.style.display = "block"
     isiSejarah.style.display = "none"
     beranda.style.display = "none"
     pengumuman.style.display = "none"
     berita.style.display = "none"
+    kartuMedsos.style.display = "none"
 }
 
 const Pengumuman = () => {
@@ -84,12 +92,14 @@ const Pengumuman = () => {
     berandaAktif.classList.remove('active')
     pengumumanAktif.classList.add('active')
     beritaAktif.classList.remove('active')
+    kartuMedsosAktif.classList.remove('active')
     pengumuman.style.display = "block"
     sejarah.style.display = "none"
     visiMisi.style.display = "none"
     isiSejarah.style.display = "none"
     beranda.style.display = "none"
     berita.style.display = "none"
+    kartuMedsos.style.display = "none"
 }
 
 const Berita = () => {
@@ -97,12 +107,29 @@ const Berita = () => {
     profil.classList.remove('active')
     berandaAktif.classList.remove('active')
     pengumumanAktif.classList.remove('active')
+    kartuMedsosAktif.classList.remove('active')
     berita.style.display = "block"
     pengumuman.style.display = "none"
     sejarah.style.display = "none"
     visiMisi.style.display = "none"
     isiSejarah.style.display = "none"
     beranda.style.display = "none"
+    kartuMedsos.style.display = "none"
+}
+
+const Medsos = () => {
+    beritaAktif.classList.remove('active')
+    profil.classList.remove('active')
+    berandaAktif.classList.remove('active')
+    pengumumanAktif.classList.remove('active')
+    kartuMedsosAktif.classList.add('active')
+    berita.style.display = "none"
+    pengumuman.style.display = "none"
+    sejarah.style.display = "none"
+    visiMisi.style.display = "none"
+    isiSejarah.style.display = "none"
+    beranda.style.display = "none"
+    kartuMedsos.style.display = "block"
 }
 
 const Topik1 = () => {
