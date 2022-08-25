@@ -25,14 +25,14 @@
 
 <body>
     <!-- Bagian Awal Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow fixed-top">
+    <nav id="my-navbar" class="navbar navbar-expand-lg navbar-dark bg-dark shadow fixed-top">
         <div class="container-fluid">
             <div>
                 <a class="navbar-brand" href="#"><i class="bi bi-globe2 text-primary"> </i>Smepela.Site</a>
             </div>
             <div>
                 <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                    <ul class="navbar-nav text-white fs-3 me-4">
+                    <ul id="tombol-mode" class="navbar-nav text-light fs-3 me-4">
                         <li class="toggle" style="display: none;" id="mode-siang" role="button" onclick="Siang()"><i
                                 class="bi bi-toggle-on"></i></li>
                         <li class="toggle" style="display: block;" id="mode-malam" role="button" onclick="Malam()"><i
@@ -57,6 +57,9 @@
                                 <li><a class="dropdown-item" href="#">...</a></li>
                             </ul>
                         </li>
+                        <li class="nav-item">
+                            <a id="berita-aktif" class="nav-link navMenu" href="#" onclick="Berita()">Berita</a>
+                        </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle navMenu" href="#" id="navbarDropdownMenuLink"
                                 role="button" data-bs-toggle="dropdown" aria-expanded="false" onclick="Pengumuman()">
@@ -67,9 +70,6 @@
                                 <li><a class="dropdown-item" href="#">ANBK 2022</a></li>
                                 <li><a class="dropdown-item" href="#halaman-beranda">...</a></li>
                             </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a id="berita-aktif" class="nav-link navMenu" href="#" onclick="Berita()">Berita</a>
                         </li>
                         <li class="nav-item">
                             <a id="kartu-medsos-aktif" class="nav-link navMenu" href="#" onclick="Medsos()">Kontak</a>
@@ -518,7 +518,10 @@
 
     <!-- kontak -->
     <div id="halaman-kartu-medsos" class="container-fluid" style="display: none;">
-        <div class="row text-center min-vh-100 d-flex justify-content-center align-content-center">
+        <div class="row text-center d-flex justify-content-center align-content-center min-vh-100">
+            <div class="hubungi-kami mb-5">
+                <h3>Tentang Kami, Kunjungi :</h3>
+            </div>
             <div class="col-md-3">
                 <a href=""><img src="img/facebook.png" class="card-img-top w-25" alt="facebook"></a>
             </div>

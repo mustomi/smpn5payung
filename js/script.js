@@ -3,15 +3,29 @@ const modeSiang = document.getElementById("mode-siang")
 const modeMalam = document.getElementById("mode-malam")
 const iconSiang = document.getElementById("icon-siang")
 const iconMalam = document.getElementById("icon-malam")
+const myNavbar = document.getElementById("my-navbar")
+const tombolMode = document.getElementById("tombol-mode")
 
 const Siang = () => {
     body.classList.remove("dark")
+    myNavbar.classList.add("navbar-dark")
+    myNavbar.classList.add("bg-dark")
+    myNavbar.classList.remove("navbar-light")
+    myNavbar.classList.remove("bg-light")
+    tombolMode.classList.add("text-light")
+    tombolMode.classList.remove("text-dark")
     modeSiang.style.display = "none"
     modeMalam.style.display = "block"
 }
 
 const Malam = () => {
     body.classList.add("dark")
+    myNavbar.classList.remove("navbar-dark")
+    myNavbar.classList.remove("bg-dark")
+    myNavbar.classList.add("navbar-light")
+    myNavbar.classList.add("bg-light")
+    tombolMode.classList.remove("text-light")
+    tombolMode.classList.add("text-dark")
     modeSiang.style.display = "block"
     modeMalam.style.display = "none"
 }
