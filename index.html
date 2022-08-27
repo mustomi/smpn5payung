@@ -137,10 +137,12 @@
                         <a href=""><i class="bi bi-telephone-fill text-primary"></i> +62 | aaa bbbb cccc</a>
                     </div>
                     <div class="col-md-4">
-                        <a href="https://wa.me/081234137990"><i class="bi bi-whatsapp text-success"></i> +62 | aaa bbbb cccc</a>
+                        <a href="https://wa.me/081234137990"><i class="bi bi-whatsapp text-success"></i> +62 | aaa bbbb
+                            cccc</a>
                     </div>
                     <div class="col-md-4">
-                        <a href="mailto:smpn5pyg@gmail.com"><i class="bi bi-envelope-check-fill text-primary"></i> smpn5pyg@gmail.com</a>
+                        <a href="mailto:smpn5pyg@gmail.com"><i class="bi bi-envelope-check-fill text-primary"></i>
+                            smpn5pyg@gmail.com</a>
                     </div>
                 </div>
             </div>
@@ -427,11 +429,21 @@
                 </div>
             </div>
         </div>
-        <div class="container d-flex justify-content-start align-content-center bg-primary">
-            <div class="menuBerita gap-4 p-3">Utama</div>
-            <div class="menuBerita gap-4 p-3">Perayaan</div>
-            <div class="menuBerita gap-4 p-3">Olahraga</div>
-            <div class="menuBerita gap-4 p-3">Prestasi</div>
+        <div class="container d-flex justify-content-start align-content-center" style="width: 100%;">
+            <ul class="nav nav-tabs">
+                <li class="nav-item">
+                    <a id="b-utama" class="nav-link active" aria-current="page" href="#">Utama</a>
+                </li>
+                <li class="nav-item">
+                    <a id="b-prestasi" class="nav-link" href="#" onclick="Prestasi()">Prestasi</a>
+                </li>
+                <li class="nav-item">
+                    <a id="b-organisasi" class="nav-link" href="#">Organisasi</a>
+                </li>
+                <li class="nav-item">
+                    <a id="b-perayaan" class="nav-link" href="#">Perayaan</a>
+                </li>
+            </ul>
         </div>
 
         <!-- Konten Utama -->
@@ -453,16 +465,27 @@
                         </div>
                         <div class="row">
                             <div class="col d-flex justify-content-center align-content-center mt-4">
-                                <img src="img/hut77.jpg" alt="HUT RI KE-77" style="width: 650px; padding: 5px;">
+                                <img src="img/hut77.jpg" alt="HUT RI KE-77" style="width: 80%; padding: 5px;">
                             </div>
                         </div>
                         <div class="isi-berita-satu">
                             <br>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam eos non distinctio
-                                consequuntur molestiae veritatis temporibus error provident quasi? Quod quisquam vel,
-                                quas asperiores sapiente quibusdam assumenda error fuga labore?</p>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque repellat quo saepe. Aut,
-                                sunt animi provident ullam consectetur quis quisquam!</p>
+                            <p>BERITA.SMEPELA - Rabu, 17 Agustus 2022 Peringatan HUT RI ke-77. Upacara dilaksakan di
+                                lapangan sepak bola kecamatan payung. Upacara yang dilaksanakan dihadiri oleh seluruh
+                                sekolah yang ada di kecamatan payung. salah satunya SMP Negeri 5 Payung, dengan
+                                partisipasi peserta 1 regu perwakilan sekolah beserta guru dan tenaga kependidikan.
+                                Upacara terlaksana dengan lancar dan hikmat.</p>
+                            <p>Rangkaian peringatan HUT RI ke-77 dilanjutkan disekolah masing-masing. Termasuk SMP
+                                Negeri 5 Payung. Dalam rangka memeriahkan HUT RI ke-77 SMP Negeri 5 Payung mengadakan
+                                lomba-lomba yang diikuti oleh seluruh peserta didik di SMP Negeri 5 Payung. yaitu lomba
+                                Senam, Lomba Makan Kerupuk, estapet sarung dan memasukkan paku ke dalam botol. kegiatan
+                                lomba berjalan dengan lancar, meriah dan antusias.</p>
+                            <p>"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque omnis voluptates
+                                fugit ut doloribus natus, in eum asperiores? Vero eos praesentium, maxime hic impedit
+                                temporibus nemo voluptate consequuntur reiciendis totam, corporis harum fugiat quo. Ex
+                                aut vel, non repellat quos harum maxime, aspernatur et perspiciatis, voluptatum
+                                repellendus quibusdam neque nesciunt?" tutur ibu wira Fitria selaku kepala SMP Negeri 5
+                                Payung.</p>
                         </div>
                     </div>
                     <div id="berita-u3" class="berita-utama" style="display: none;">
@@ -526,7 +549,8 @@
                 <a href=""><img src="img/facebook.png" class="card-img-top w-25" alt="facebook"></a>
             </div>
             <div class="col-md-3">
-                <a href="https://mustomi.github.io/smpn5payung"><img src="img/website.png" class="card-img-top w-25" alt="website"></a>
+                <a href="https://mustomi.github.io/smpn5payung"><img src="img/website.png" class="card-img-top w-25"
+                        alt="website"></a>
             </div>
         </div>
     </div>
