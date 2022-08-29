@@ -41,7 +41,7 @@
                     </ul>
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a id="beranda-aktif" class="nav-link active navMenu" aria-current="page" href="#"
+                            <a id="beranda-aktif" class="nav-link active navMenu" aria-current="page" href="#beranda"
                                 onclick="Beranda()">Beranda</a>
                         </li>
                         <li class="nav-item dropdown">
@@ -50,24 +50,28 @@
                                 Profil Sekolah
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <li><a class="dropdown-item" role="button" href="#" onclick="Sejarah()">Sejarah
+                                <li><a class="dropdown-item" role="button" href="#isi-sejarah"
+                                        onclick="Sejarah()">Sejarah
                                         Sekolah</a></li>
-                                <li><a class="dropdown-item" href="#" onclick="VisiMisi()">Visi dan Misi Sekolah</a>
+                                <li><a class="dropdown-item" href="#visi-misi" onclick="VisiMisi()">Visi dan Misi
+                                        Sekolah</a>
                                 </li>
                                 <li><a class="dropdown-item" href="#">...</a></li>
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a id="berita-aktif" class="nav-link navMenu" href="#" onclick="Berita()">Berita</a>
+                            <a id="berita-aktif" class="nav-link navMenu" href="#kumpulan-berita"
+                                onclick="Berita()">Berita</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle navMenu" href="#" id="navbarDropdownMenuLink"
-                                role="button" data-bs-toggle="dropdown" aria-expanded="false" onclick="Pengumuman()">
+                            <a class="nav-link dropdown-toggle navMenu" href="#halaman-pengumuman"
+                                id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false" onclick="Pengumuman()">
                                 Pengumuman
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <li><a class="dropdown-item" href="#">PPDB 2022-2023</a></li>
-                                <li><a class="dropdown-item" href="#">ANBK 2022</a></li>
+                                <li><a class="dropdown-item" href="#halaman-pengumuman">PPDB 2022-2023</a></li>
+                                <li><a class="dropdown-item" href="#halaman-pengumuman">ANBK 2022</a></li>
                                 <li><a class="dropdown-item" href="#halaman-beranda">...</a></li>
                             </ul>
                         </li>
@@ -130,7 +134,7 @@
         <!-- Bagian Akhir Slide Show -->
 
         <!-- Bagian Hubungi -->
-        <div class="container-fluid shadow-lg border-bottom">
+        <div class="container-fluid shadow-lg border-bottom p-3">
             <div class="container">
                 <div class="row text-center p-3 mt-0 bt-2 mediaSosial hubungi">
                     <div class="col-md-4">
@@ -149,20 +153,20 @@
         </div>
 
         <!-- Bagian Berita Terikini -->
-        <div class="container-fluid mt-2 ms-1">
+        <div class="container-fluid mt-5 ms-1">
             <div class="row text-center">
                 <div class="col">
                     <h1>Berita Smepela</h1>
                 </div>
             </div>
         </div>
-        <div class="container-fluid mt-3" style="min-height: 500px;">
-            <div class="row text-center">
+        <div class="container-fluid mt-5" style="min-height: 500px;">
+            <div class="row text-center d-flex align-content-center justify-content-center gap-5">
                 <div class="col-md-3 text-center d-flex align-content-center justify-content-center">
                     <div class="card">
                         <img src="img/lulus2022.jpg" class="card-img-top" alt="kelulusan 2022">
                         <div class="card-body m-0 mt-1 p-0">
-                            <a class="card-text" onclick="Topik1()">Suka Cita Acara Kelulusan Peserta Didik SMP Negeri 5
+                            <a class="card-text" href="#berita-u1" onclick="Topik1()">Suka Cita Acara Kelulusan Peserta Didik SMP Negeri 5
                                 Payung
                                 2021-2022.</a>
                         </div>
@@ -182,7 +186,8 @@
                     <div class="card">
                         <img src="img/hut77.jpg" class="card-img-top" alt="HUT Kemerdekaan ke 77">
                         <div class="card-body m-0 mt-1 p-0">
-                            <a class="card-text" onclick="Topik2()">Kemeriahan HUT Kemerdekaan RI ke-77 di SMP Negeri 5
+                            <a class="card-text" href="#berita-u2" onclick="Topik2()">Kemeriahan HUT Kemerdekaan RI
+                                ke-77 di SMP Negeri 5
                                 Payung.</a>
                         </div>
                         <div class="d-flex justify-content-evenly mt-3">
@@ -199,14 +204,14 @@
                 </div>
                 <div class="col-md-3 text-center d-flex align-content-center justify-content-center">
                     <div class="card">
-                        <img src="img/lulus2022.jpg" class="card-img-top" alt="...">
+                        <img src="img/sepak-bola.jpg" class="card-img-top" alt="...">
                         <div class="card-body m-0 mt-1 p-0">
-                            <a href="" class="card-text">Acara Kelulusan Peserta Didik SMP Negeri 5 Payung
-                                2021-2022.</a>
+                            <a href="#berita-u3" class="card-text" onclick="Topik3()">Semangat Delegasi SMP Negeri 5
+                                Payung untuk Piala Kemerdekaan U-13 Parma Jaya Academy.</a>
                         </div>
                         <div class="d-flex justify-content-evenly mt-3">
                             <div class="waktuRilis">
-                                <a class="publish mt-0" style="text-decoration: none; color: black;">Rabu, 15 Mei
+                                <a class="publish mt-0" style="text-decoration: none; color: black;">Minggu, 28 Agustus
                                     2022</a>
                             </div>
                             <div class="penulis">
@@ -216,7 +221,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3 text-center d-flex align-content-center justify-content-center">
+                <!-- <div class="col-md-3 text-center d-flex align-content-center justify-content-center">
                     <div class="card">
                         <img src="img/lulus2022.jpg" class="card-img-top" alt="...">
                         <div class="card-body m-0 mt-1 p-0">
@@ -234,7 +239,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
     </div>
@@ -429,29 +434,52 @@
                 </div>
             </div>
         </div>
-        <div class="container d-flex justify-content-start align-content-center" style="width: 100%;">
-            <ul class="nav nav-tabs">
-                <li class="nav-item">
-                    <a id="b-utama" class="nav-link active" aria-current="page" href="#">Utama</a>
-                </li>
-                <li class="nav-item">
-                    <a id="b-prestasi" class="nav-link" href="#" onclick="Prestasi()">Prestasi</a>
-                </li>
-                <li class="nav-item">
-                    <a id="b-organisasi" class="nav-link" href="#">Organisasi</a>
-                </li>
-                <li class="nav-item">
-                    <a id="b-perayaan" class="nav-link" href="#">Perayaan</a>
-                </li>
-            </ul>
-        </div>
 
         <!-- Konten Utama -->
         <div class="container">
-            <div id="kumpulan berita" class="row min-vh-100">
+            <div id="kumpulan-berita" class="row min-vh-100">
                 <div class="col-md-8">
-                    <div id="berita-u1" class="berita-utama" style="display: none;">
-                        <h1>halaman konten berita 1</h1>
+                    <div class="container d-flex justify-content-start align-content-center" style="width: 100%;">
+                        <ul class="nav nav-tabs">
+                            <li class="nav-item">
+                                <a id="b-utama" class="nav-link active" aria-current="page" href="#">Utama</a>
+                            </li>
+                            <li class="nav-item">
+                                <a id="b-prestasi" class="nav-link" href="#" onclick="Prestasi()">Prestasi</a>
+                            </li>
+                            <li class="nav-item">
+                                <a id="b-organisasi" class="nav-link" href="#">Organisasi</a>
+                            </li>
+                            <li class="nav-item">
+                                <a id="b-perayaan" class="nav-link" href="#">Perayaan</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="berita-u1" class="berita-utama mt-4" style="display: none;">
+                        <h1>Suka Cita Acara Kelulusan Peserta Didik SMP Negeri 5
+                            Payung
+                            2021-2022.</h1>
+                        <div class="row">
+                            <div class="col-md">
+                                <span>Senin, 24 Mei 2022</span>
+                            </div>
+                            <div class="col-md text-end">
+                                <span>Oleh : Tim Smepela</span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col d-flex justify-content-center align-content-center mt-4">
+                                <img src="img/lulus2022.jpg" alt="kelulusan 2022" style="width: 80%; padding: 5px;">
+                            </div>
+                        </div>
+                        <div class="isi-berita">
+                            <br>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum at labore distinctio hic officia voluptate, alias, aspernatur commodi cum vero iusto dicta ducimus quibusdam veniam temporibus iste doloribus tenetur rem. Esse reiciendis itaque voluptatibus perferendis, laborum minima consectetur, ad temporibus dignissimos adipisci libero placeat excepturi, quas at non dolorem exercitationem.</p>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non suscipit necessitatibus, nesciunt expedita tempore nam dolor ea. Cupiditate ea neque iure excepturi nobis doloribus suscipit? Deserunt similique sequi vitae perferendis laboriosam dolor explicabo. Amet molestiae soluta qui accusamus placeat. Voluptate libero sit harum qui nihil.
+                            </p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, minima mollitia in necessitatibus aspernatur voluptate temporibus, commodi, inventore ullam aut veniam provident ratione voluptas laborum. Exercitationem obcaecati, nam esse quidem optio quos suscipit cumque in qui minima quo mollitia fugit cupiditate perferendis dolorum temporibus hic eum, pariatur consequatur quam repellendus.</p>
+                        </div>
+                        <hr>
                     </div>
                     <div id="berita-u2" class="berita-utama mt-4" style="display: block;">
                         <h1>Kemeriahan HUT Kemerdekaan RI ke-77 di SMP Negeri 5 Payung.</h1>
@@ -487,13 +515,64 @@
                                 repellendus quibusdam neque nesciunt?" tutur ibu wira Fitria selaku kepala SMP Negeri 5
                                 Payung.</p>
                         </div>
+                        <hr>
                     </div>
-                    <div id="berita-u3" class="berita-utama" style="display: none;">
-                        <h1>halaman konten berita 3</h1>
+                    <div id="berita-u3" class="berita-utama" style="display: block;">
+                        <h1>Semangat Delegasi SMP Negeri 5 Payung untuk Piala Kemerdekaan U-13 Parma Jaya Academy.</h1>
+                        <div class="row">
+                            <div class="col-md">
+                                <span>Minggu, 28 Agustus 2022</span>
+                            </div>
+                            <div class="col-md text-end">
+                                <span>Oleh : Tim Smepela</span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col d-flex justify-content-center align-content-center mt-4">
+                                <img src="img/sepak-bola.jpg" alt="piala kemerdekaan u-13"
+                                    style="width: 80%; padding: 5px;">
+                            </div>
+                        </div>
+                        <div class="isi-berita">
+                            <br>
+                            <p>BERITA.SMEPELA - Dalam rangka memperingati Hari Ulang Tahun Kemerdekaan Republik
+                                Indonesia ke-77, Parma Jaya Academy melaksanakan "PIALA KEMERDEKAAN U-13" bertujuan
+                                menjaring bakat sepak bola usia dini yang unggul dan berdaya saing. Turnamen sepakbola
+                                ini di selenggarakan di desa Malik yang di ketuai Pak Adi Wijaya dalam rangka merayakan
+                                kemerdekaan.
+                                Turnamen ini di selenggarakan selama 2 hari yaitu hari Sabtu, 27 Agustus 2022 dan
+                                Minggu, 28 Agusus 2022.</p>
+                            <p>
+                                Pertandingan pertama pada hari Sabtu yaitu SMP negeri 5 PAYUNG Berhadapan dengan SD 4
+                                Payung karena sistem pertandingannya campuran SD dengan SMP.
+                                Pada Hari Sabtu Tersebut SMP negeri 5 PAYUNG Berhadapan dengan SD 4 Payung dengan skor
+                                1-1.
+                                Lalu terjadilah adu pinalti untk merebut posisi ataupun tiket sebagai tim yang masuk ke
+                                dlm perempat final.
+                                kemenangan berpihak ke SMP negeri 5 PAYUNG.
+                                Pertandingan dilanjutkan pada hari Minggu.
+                                Ada 4 Tim yang masuk ke perempat final yaitu SMP NEGERI 1 PAYUNG, SMP NEGERI 2 PAYUNG,
+                                SMP NEGERI 3 PAYUNG Dan Diikuti SMP NEGERI 5 PAYUNG.</p>
+                            <p>Sistem pertandingan di rubah yang sebelumnya sistem gugur kemudian menjadi sistem
+                                pertemuan atau sistem point.
+                                Pertandingan pertama SMP NEGERI 5 VS SMP NEGERI 1 PAYUNG dengan skor 3-0 di menangkan
+                                SMP NEGERI 5 PAYUNG.
+                                Pertandingan ke dua SMP NEGERI 5 PAYUNG VS SMP NEGERI 2 PAYUNG dengan skor 2-0 di
+                                menangkan SMP NEGERI 5 PAYUNG.
+                                Dan Pertandingan ke 3 yang menjdi penentu SMP NEGERI 5 PAYUNG VS SMP NEGERI 3 PAYUNG
+                                dengan skor 0-0.
+                                Dengan skor Tersebut SMP negeri 5 PAYUNG mengunci gelar juara 1 dan membawa Piala
+                                Bergilir dan Piala tetap ke SMP Negeri 5 Payung</p>
+                            <p>"Apa yang sudah kita dapatkan jadikan sebagai motivasi bagi diri sendiri untuk terus
+                                mengembangkan potensi yang dimiliki. jangan cepat puas dengan apa yang sudah didapatkan,
+                                tetap semangat dan terus berlatih." ujar pak dika selaku pelatih.</p>
+                        </div>
+                        <hr>
                     </div>
-                    <div id="berita-u4" class="berita-utama" style="display: none;">
+                    <!-- <div id="berita-u4" class="berita-utama" style="display: none;">
                         <h1>halaman konten berita 4</h1>
-                    </div>
+                        <hr>
+                    </div> -->
                 </div>
 
                 <!-- konten samping -->
