@@ -43,6 +43,7 @@ const beritaAktif = document.getElementById("berita-aktif")
 const beritaSatu = document.getElementById("berita-u1")
 const beritaDua = document.getElementById("berita-u2")
 const beritaTiga = document.getElementById("berita-u3")
+const beritaEmpat = document.getElementById("berita-u4")
 const kartuMedsos = document.getElementById("halaman-kartu-medsos")
 const kartuMedsosAktif = document.getElementById("kartu-medsos-aktif")
 const listArsipJuli = document.getElementById("list-arsip-juli")
@@ -125,6 +126,7 @@ const Berita = () => {
     beritaSatu.style.display = "block"
     beritaDua.style.display = "block"
     beritaTiga.style.display = "block"
+    beritaEmpat.style.display = "block"
     pengumuman.style.display = "none"
     sejarah.style.display = "none"
     visiMisi.style.display = "none"
@@ -157,6 +159,7 @@ const Topik1 = () => {
     beritaSatu.style.display = "block"
     beritaDua.style.display = "none"
     beritaTiga.style.display = "none"
+    beritaEmpat.style.display = "none"
     pengumuman.style.display = "none"
     sejarah.style.display = "none"
     visiMisi.style.display = "none"
@@ -172,6 +175,7 @@ const Topik2 = () => {
     beritaSatu.style.display = "none"
     beritaDua.style.display = "block"
     beritaTiga.style.display = "none"
+    beritaEmpat.style.display = "none"
     pengumuman.style.display = "none"
     sejarah.style.display = "none"
     visiMisi.style.display = "none"
@@ -188,6 +192,24 @@ const Topik3 = () => {
     beritaSatu.style.display = "none"
     beritaDua.style.display = "none"
     beritaTiga.style.display = "block"
+    beritaEmpat.style.display = "none"
+    pengumuman.style.display = "none"
+    sejarah.style.display = "none"
+    visiMisi.style.display = "none"
+    isiSejarah.style.display = "none"
+    beranda.style.display = "none"
+}
+
+const Topik4 = () => {
+    berandaAktif.classList.add('active')
+    profil.classList.remove('active')
+    berandaAktif.classList.remove('active')
+    pengumumanAktif.classList.remove('active')
+    berita.style.display = "block"
+    beritaSatu.style.display = "none"
+    beritaDua.style.display = "none"
+    beritaTiga.style.display = "none"
+    beritaEmpat.style.display = "block"
     pengumuman.style.display = "none"
     sejarah.style.display = "none"
     visiMisi.style.display = "none"
