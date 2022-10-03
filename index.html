@@ -2,29 +2,18 @@
 <html lang="en">
 
 <head>
-    <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-
-    <!-- Bootstrap Offline -->
     <link rel="stylesheet" href="css/bootstrap.min.offline.css">
-
-
-    <!-- Bootsrap icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
-
-    <!-- My Style -->
     <link rel="stylesheet" href="style.css">
 
     <title>.. | SMPN 5 PAYUNG</title>
 </head>
 
 <body>
-    <!-- Bagian Awal Navbar -->
     <nav id="my-navbar" class="navbar navbar-expand-lg navbar-dark bg-dark shadow fixed-top">
         <div class="container-fluid">
             <div>
@@ -41,42 +30,38 @@
                     </ul>
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a id="beranda-aktif" class="nav-link active navMenu" aria-current="page" href="#beranda"
-                                onclick="Beranda()">Beranda</a>
+                            <a id="beranda-aktif" class="nav-link active navMenu" aria-current="page"
+                                href="#target-beranda" onclick="BerandaAktif()">Beranda</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a id="profil" class="nav-link dropdown-toggle navMenu" href="#" id="navbarDropdownMenuLink"
-                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <a id="profil" class="nav-link dropdown-toggle navMenu" href="#target-sejarah"
+                                id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false" onclick="ProfilAktif()">
                                 Profil Sekolah
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <li><a class="dropdown-item" role="button" href="#isi-sejarah"
-                                        onclick="Sejarah()">Sejarah
+                                <li><a class="dropdown-item" role="button" href="#isi-sejarah">Sejarah
                                         Sekolah</a></li>
-                                <li><a class="dropdown-item" href="#visi-misi" onclick="VisiMisi()">Visi dan Misi
+                                <li><a class="dropdown-item" href="#visi">Visi
                                         Sekolah</a>
                                 </li>
-                                <li><a class="dropdown-item" href="#">...</a></li>
+                                <li><a class="dropdown-item" href="#misi">Misi Sekolah</a></li>
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a id="berita-aktif" class="nav-link navMenu" href="#kumpulan-berita"
-                                onclick="Berita()">Berita</a>
+                            <a id="berita-aktif" class="nav-link navMenu" href="#berita"
+                                onclick="BeritaAktif()">Berita</a>
                         </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle navMenu" href="#halaman-pengumuman"
-                                id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false" onclick="Pengumuman()">
+                        <li class="nav-item">
+                            <a id="pengumuman-aktif" class="nav-link navMenu" href="#halaman-pengumuman"
+                                onclick="PengumumanAktif()">
                                 Pengumuman
                             </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <li><a class="dropdown-item" href="#halaman-pengumuman">PPDB 2022-2023</a></li>
-                                <li><a class="dropdown-item" href="#halaman-pengumuman">ANBK 2022</a></li>
-                                <li><a class="dropdown-item" href="#halaman-beranda">...</a></li>
-                            </ul>
                         </li>
                         <li class="nav-item">
-                            <a id="kartu-medsos-aktif" class="nav-link navMenu" href="#" onclick="Medsos()">Kontak</a>
+                            <a id="btn-follow-us" class="nav-link btn btn-danger" href="#media-sosial">
+                                About
+                            </a>
                         </li>
                     </ul>
                 </div>
@@ -88,13 +73,41 @@
             </div>
         </div>
     </nav>
-    <!-- Bagian Akhir Navbar -->
-
-    <!-- Halaman Beranda -->
-    <div id="halaman-beranda" class="container-fluid" style="display: block;">
-
-        <!-- Baigan Awal Slide Show -->
-        <div id="carouselExampleDark" class="carousel carousel-dark slide shadow border-bottom" data-bs-ride="carousel">
+    <section class="container-fluid min-vh-100">
+        <div id="target-beranda" class="target"></div>
+        <div class="container border-1">
+            <div class="row">
+                <div class="col-md-2">
+                    <div class="brand-sekolah">
+                        <img src="img/logo.png" alt="logo smepela">
+                    </div>
+                </div>
+                <div class="col-md-10 text-start">
+                    <div class="brand-sekolah-text mt-2 mb-2">
+                        <h3><b>SMP NEGERI 5 PAYUNG</b></h3>
+                        <span>Jl. Batin Tikal, Desa Ranggung, Kec. Payung, Kab. Bangka Selatan.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid shadow border-bottom border-top">
+            <div class="container">
+                <div class="row text-center mediaSosial hubungi p-3">
+                    <div class="col-md-4">
+                        <a href=""><i class="bi bi-telephone-fill text-primary"></i> +62 | 838 7885 4612</a>
+                    </div>
+                    <div class="col-md-4">
+                        <a href="https://wa.me/083878854612"><i class="bi bi-whatsapp text-success"></i> +62 | 838 7885
+                            4612</a>
+                    </div>
+                    <div class="col-md-4">
+                        <a href="mailto:smpn5pyg@gmail.com"><i class="bi bi-envelope-check-fill text-primary"></i>
+                            smpn5pyg@gmail.com</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="carouselExampleDark" class="carousel carousel-dark slide shadow-lg" data-bs-ride="carousel">
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
                     aria-current="true" aria-label="Slide 1"></button>
@@ -131,73 +144,183 @@
                 <span class="visually-hidden">Next</span>
             </button>
         </div>
-        <!-- Bagian Akhir Slide Show -->
+    </section>
 
-        <!-- Bagian Hubungi -->
-        <div class="container-fluid shadow-lg border-bottom p-3">
+    <section class="min-vh-100">
+        <div id="isi-sejarah" class="target"></div>
+        <div class="container-fluid">
             <div class="container">
-                <div class="row text-center p-3 mt-0 bt-2 mediaSosial hubungi">
-                    <div class="col-md-4">
-                        <a href=""><i class="bi bi-telephone-fill text-primary"></i> +62 | aaa bbbb cccc</a>
-                    </div>
-                    <div class="col-md-4">
-                        <a href="https://wa.me/081234137990"><i class="bi bi-whatsapp text-success"></i> +62 | aaa bbbb
-                            cccc</a>
-                    </div>
-                    <div class="col-md-4">
-                        <a href="mailto:smpn5pyg@gmail.com"><i class="bi bi-envelope-check-fill text-primary"></i>
-                            smpn5pyg@gmail.com</a>
+                <div class="container-fluid">
+                    <div class="row mt-5">
+                        <div class="col-md-8">
+                            <div class="row">
+                                <div class="col-md text-start">
+                                    <div class="row">
+                                        <h3 class="text-center">Sejarah Berdirinya <br> SMP Negeri 5 Payung</h3>
+                                        <div class="col-md-4 text-center mb-2 mt-5">
+                                            <img class="mt-3" src="img/monumen.jpg" alt="monumen" width="80%" height="80%">
+                                        </div>
+                                        <div class="col-md-8 mt-4">
+                                            <p>SMP Negeri 5 Payung merupakan salah satu sekolah menengah pertama negeri
+                                                yang
+                                                berada
+                                                di Kabupaten Bangka Selatan. Didirikan pada tahun 2019. Penerimaan
+                                                Peserta Didik
+                                                Baru telah dimulai pada tahun pelajaran 2019/2020 yang sekaligus
+                                                merupakan
+                                                angkatan
+                                                pertama di SMP Negeri 5 Payung. Pada masa itu para siswa masih belajar
+                                                menggunakan
+                                                fasilitas gedung SD Negeri 12 Payung dan Bapak Samsiar, S.Ag selaku
+                                                kepala
+                                                sekolah
+                                                yang menjabat pada masa itu. sampai akhirnya pada akhir Desember gedung
+                                                SMP
+                                                Negeri 5
+                                                Payung selesai dibangun. Sehingga pada semester 2 tahun pelajaran
+                                                2019/2020
+                                                pindah
+                                                dari fasilitas SD Negeri 12 Payung ke Fasilitas SMP Negeri 5 Payung.</p>
+                                            <p>Selanjutnya pada tahun pelajaran 2020/2021 terjadi pergantian kepala
+                                                sekolah. Dimana pada masa Kepala sekolah SMP Negeri 5 Payung adala Bapak
+                                                Amirullah, SE yang menjabat sampai tahun pelajaran 2021/2022. Kemudian
+                                                terjadi kembali pergantian kepala sekolah pada tahun pelajaran 2022/2023
+                                                dari Bapak Amirullah, SE menjadi Ibu Wira Fitria, S.Pd sampai saat ini.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 border-start">
+                            <div class="row">
+                                <div class="col mt-2">
+                                    <h3>Daftar Kepala Sekolah</h3>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md d-flex justify-content-center align-content-center">
+                                    <img src="img/pkepsek.png" alt="pkepsek1" width="100" height="100">
+                                </div>
+                                <div class="col-md mt-3">
+                                    <h6><b>SYAMSIAR, S.Ag</b></h6>
+                                    <p>Tahun 2019-2020</p>
+                                </div>
+                            </div>
+                            <div class="row mt-4">
+                                <div class="col-md d-flex justify-content-center align-content-center">
+                                    <img src="img/pkepsek.png" alt="pkepsek2" width="100" height="100">
+                                </div>
+                                <div class="col-md mt-3">
+                                    <h6><b>AMIRULLAH, S.E</b></h6>
+                                    <p>Tahun 2020-2022</p>
+                                </div>
+                            </div>
+                            <div class="row mt-4">
+                                <div class="col-md d-flex justify-content-center align-content-center">
+                                    <img src="img/pkepsek.png" alt="pkepsek3" width="100" height="100">
+                                </div>
+                                <div class="col-md mt-3">
+                                    <h6><b>WIRA FITRIA, S.Pd</b></h6>
+                                    <p>Tahun 2022 sampai saat ini</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+    </section>
+    <section class="min-vh-100">
+        <div id="visi" class="target"></div>
+        <div class="container-fluid">
+            <div class="col-md-8 container-fluid">
+                <div class="row">
+                    <div class="col-md text-center">
+                        <h3><b>VISI DAN MISI SEKOLAH</b></h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md text-center mt-4">
+                        <h4><b>VISI <br> SMP NEGERI 5 PAYUNG</b></h4>
+                        <h6>"Terwujudnya Pendidikan yang Berkualitas, Produktif, Inovatif dan
+                            Berbasis Lingkungan
+                            Global"</h6>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md text-start mt-5">
+                        <h4>MOTTO : <b>"BERPRESTASI DAN BERKATAKTER"</b></h4>
+                        <br>
+                        <h5>Indikator - indikatornya adalah : </h5>
+                        <br>
+                        <p>1. Unggul dalam pengembangan sikap dan perilaku religius dilingkuangan
+                            dalam dan luar
+                            sekolah.</p>
+                        <p>2. Pencapaian nilai rata-rata raport setiap semester adalah 7,20.</p>
+                        <p>3. Berprestasi dalam bidang akademik dan non akademik.</p>
+                        <p>4. Unggul dalam pelaksanaan 7K.</p>
+                        <p>5. Pencapaian kompetensi dalam ujian nasional.</p>
+                        <p>6. Pencapaian dalam pengembangan pembelajaran PAIKEM GEMBROT.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md text-start min-vh-100">
+                        <div id="misi" class="target"></div>
+                        <div class="col-md text-center">
+                            <h3><b>MISI <br> SMP NEGERI 5 PAYUNG</b></h3>
+                        </div>
+                        <br>
+                        <p>1. Mengembangkan sikap dan perilaku religius dilingkungan dalam dan luar
+                            sekolah.</p>
+                        <p>2. Menciptakan suasana pembelajaran yang menantang, menyenangkan,
+                            komunikatif, takut
+                            salah dan demokratis melalui PAIKEM GEMBROT.</p>
+                        <p>3. Meningkatkan peran warga sekolah dalam perilaku hidup bersih, sehat
+                            dan peduli
+                            lingkungan sekolah secara mandiri dan bersama-sama agar menjadi budaya
+                            sekolah.</p>
+                        <p>4. Mengembangkan budaya gemar membaca, rasa ingin tahu, bertoleransi,
+                            bekerjasama, saling
+                            menghargai, disiplin, jujur, kerja keras, kreatif dan mandiri.</p>
+                        <p>5. Meningkatkan prestasi siswa melalui pengembangan diri dan
+                            ekstrakurikuler.</p>
+                        <br>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        <!-- Bagian Berita Terikini -->
-        <div class="container-fluid mt-5 ms-1">
+
+    <section class="min-vh-100">
+        <div id="berita" class="target"></div>
+        <div class="container-fluid mt-5">
             <div class="row text-center">
                 <div class="col">
                     <h1>Berita Smepela</h1>
                 </div>
             </div>
         </div>
-        <div class="container-fluid mt-5" style="min-height: 500px;">
+        <div class="container-fluid mt-5" style="min-height: 450px;">
             <div class="row text-center d-flex align-content-center justify-content-center">
                 <div class="col-md-3 text-center d-flex align-content-center justify-content-center mt-3">
                     <div class="card">
-                        <img src="img/lulus2022.jpg" class="card-img-top" alt="kelulusan 2022">
-                        <div class="card-body m-0 mt-1 p-0">
-                            <a class="card-text" href="#berita-u1" onclick="Topik1()">Suka Cita Acara Kelulusan Peserta
-                                Didik SMP Negeri 5
-                                Payung
-                                2021-2022.</a>
-                        </div>
-                        <div class="d-flex justify-content-evenly mt-3">
-                            <div class="waktuRilis">
-                                <a class="publish mt-0" style="text-decoration: none; color: black;">Rabu, 15 Mei
-                                    2022</a>
-                            </div>
-                            <div class="penulis">
-                                <a class="publish mt-0" style="text-decoration: none; color: black;">Oleh : Tim
-                                    Smepela</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 text-center d-flex align-content-center justify-content-center mt-3">
-                    <div class="card">
                         <img src="img/hut77.jpg" class="card-img-top" alt="HUT Kemerdekaan ke 77">
-                        <div class="card-body m-0 mt-1 p-0">
-                            <a class="card-text" href="#berita-u2" onclick="Topik2()">Kemeriahan HUT Kemerdekaan RI
+                        <div class="card-body mt-1">
+                            <a class="card-text"
+                                href="pages/kemeriahan-hut-kemerdekaan-ri-ke-77-di-smp-negeri-5-payung.html">Kemeriahan
+                                HUT Kemerdekaan RI
                                 ke-77 di SMP Negeri 5
                                 Payung.</a>
                         </div>
                         <div class="d-flex justify-content-evenly mt-3">
                             <div class="waktuRilis">
-                                <a class="publish mt-0" style="text-decoration: none; color: black;">Rabu, 17 Agustus
+                                <a class="publish" style="text-decoration: none; color: black;">Rabu, 17 Agustus
                                     2022</a>
                             </div>
                             <div class="penulis">
-                                <a class="publish mt-0" style="text-decoration: none; color: black;">Oleh : Tim
+                                <a class="publish" style="text-decoration: none; color: black;">Oleh : Tim
                                     Smepela</a>
                             </div>
                         </div>
@@ -206,8 +329,9 @@
                 <div class="col-md-3 text-center d-flex align-content-center justify-content-center mt-3">
                     <div class="card">
                         <img src="img/sepak-bola.jpg" class="card-img-top" alt="Sepak Bola">
-                        <div class="card-body m-0 mt-1 p-0">
-                            <a href="#berita-u3" class="card-text" onclick="Topik3()">Semangat Delegasi SMP Negeri 5
+                        <div class="card-body mt-1">
+                            <a href="pages/semangat-delegasi-smp-negeri-5-payung-untuk-piala-kemerdekaan-u-13-parma-jaya-academy.html"
+                                class="card-text">Semangat Delegasi SMP Negeri 5
                                 Payung untuk Piala Kemerdekaan U-13 Parma Jaya Academy.</a>
                         </div>
                         <div class="d-flex justify-content-evenly mt-3">
@@ -226,7 +350,9 @@
                     <div class="card">
                         <img src="img/Pisah-Sambut- Kepsek.png" class="card-img-top" alt="Pisah sambut Kepsek Smpela">
                         <div class="card-body m-0 mt-1 p-0">
-                            <a href="#berita-u4" class="card-text" onclick="Topik4()">Pisah Sambut Kepala SMP Negeri 5 Payung.</a>
+                            <a href="pages/pisah-sambut-kepala-smp-negeri-5-payung.html" class="card-text">Pisah Sambut
+                                Kepala SMP Negeri 5
+                                Payung.</a>
                         </div>
                         <div class="d-flex justify-content-evenly mt-">
                             <div class="waktuRilis">
@@ -240,189 +366,54 @@
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- bagian sejarah sekolah dengan default display none -->
-    <div id="sejarah-sekolah" class="container-fluid" style="display: none;">
-
-        <!-- Bagian Kepala -->
-        <div class="container">
-            <div class="row">
-                <div class="col-md-2">
-                    <div class="brand-sekolah">
-                        <img src="img/logo.png" alt="logo smepela">
-                    </div>
-                </div>
-                <div class="col-md-10 text-start">
-                    <div class="brand-sekolah-text mt-4">
-                        <h1><b>SMP NEGERI 5 PAYUNG</b></h1>
-                        <span>Jl. Batin Tikal, Desa Ranggung, Kec. Payung, Kab. Bangka Selatan.</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <hr>
-
-        <!-- Konten Utama -->
-        <div id="isi-sejarah" class="container mt-4">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-md-8">
-                        <div class="row">
-                            <div class="col-md text-start">
-                                <h3>Sejarah Berdirinya SMP Negeri 5 Payung</h3><br>
-                                <p>SMP Negeri 5 Payung Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo culpa placeat error illo
-                                    vitae consequuntur ut soluta nostrum accusamus recusandae! Earum delectus eligendi
-                                    porro distinctio?.</p>
-                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum nulla soluta
-                                    explicabo earum inventore beatae. Vitae fugiat dolorem nesciunt eligendi
-                                    voluptatibus corrupti, ducimus temporibus libero sequi quos beatae reprehenderit
-                                    maiores quasi tenetur at voluptas eos! Ipsa culpa voluptates expedita sed illo!
-                                    Corrupti optio, natus culpa vel cumque sint itaque corporis?</p>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas pariatur quidem
-                                    laudantium sint fugit. Architecto sit saepe ad expedita quisquam necessitatibus
-                                    recusandae quam minus, explicabo facere, dolores molestiae fugiat dolorum aspernatur
-                                    consequatur ratione commodi nobis amet fugit modi molestias autem voluptatum magnam.
-                                    Velit ratione dignissimos atque, ullam esse eligendi accusamus! Sint tempore maxime
-                                    temporibus error officiis similique, libero eaque est vero adipisci cupiditate
-                                    asperiores sapiente itaque dignissimos hic! Ab, voluptatum!</p>
-                            </div>
+                <div class="col-md-3 text-center d-flex align-content-center justify-content-center mt-3">
+                    <div class="card">
+                        <img src="img/pelantikan-osis-2022.jpg" class="card-img-top" alt="pelantikan osis" width="200" height="240">
+                        <div class="card-body m-0 mt-1 p-0">
+                            <a class="card-text"
+                                href="pages/pelantikan-pengurus-osis-smp-negeri-5-payung-masa-bakti-2022-2023.html">Pelantikan
+                                Pengurus OSIS SMP
+                                Negeri 5 Payung Masa Bakti 2022/2023.</a>
                         </div>
-                    </div>
-
-                    <!-- Konten Samping -->
-                    <div class="col-md-4 border-start">
-                        <div class="row">
-                            <div class="col">
-                                <h3>Daftar Kepala Sekolah</h3>
+                        <div class="d-flex justify-content-evenly mt-3">
+                            <div class="waktuRilis">
+                                <a class="publish mt-0" style="text-decoration: none; color: black;">Selasa, 20
+                                    September
+                                    2022</a>
                             </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md d-flex justify-content-center align-content-center">
-                                <img src="img/pkepsek.png" alt="pkepsek1">
-                            </div>
-                            <div class="col-md mt-3">
-                                <h5>SYAMSIAR, S.Ag</h5>
-                                <p>Tahun 2019-2020</p>
-                            </div>
-                        </div>
-                        <div class="row mt-4">
-                            <div class="col-md d-flex justify-content-center align-content-center">
-                                <img src="img/pkepsek.png" alt="pkepsek2">
-                            </div>
-                            <div class="col-md mt-3">
-                                <h5>AMIRULLAH, S.E</h5>
-                                <p>Tahun 2020-2022</p>
-                            </div>
-                        </div>
-                        <div class="row mt-4">
-                            <div class="col-md d-flex justify-content-center align-content-center">
-                                <img src="img/pkepsek.png" alt="pkepsek2">
-                            </div>
-                            <div class="col-md mt-3">
-                                <h5>WIRA FITRIA, S.Pd</h5>
-                                <p>Tahun 2022- ...</p>
+                            <div class="penulis">
+                                <a class="publish mt-0" style="text-decoration: none; color: black;">Oleh : Tim
+                                    Smepela</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-
-    <!-- halaman visi misi sekolah dengan default display none -->
-    <div id="visi-misi" class="container-fluid" style="display: none;">
-
-        <!-- konten Utama -->
-        <div class="container">
-            <div class="row">
-                <div class="col-md-8">
-                    <div class="row">
-                        <div class="col-md text-center">
-                            <h3><b>VISI DAN MISI SMP NEGERI 5 PAYUNG</b></h3>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md text-center mt-4">
-                            <h4><b>VISI</b></h4>
-                            <h6>"Terwujudnya Pendidikan yang Berkualitas, Produktif, Inovatif dan Berbasis Lingkungan
-                                Global"</h6>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md text-start mt-5">
-                            <h4>MOTTO : <b>"BERPRESTASI DAN BERKATAKTER"</b></h4>
-                            <br>
-                            <h5>Indikator - indikatornya adalah : </h5>
-                            <br>
-                            <p>1. Unggul dalam pengembangan sikap dan perilaku religius dilingkuangan dalam dan luar
-                                sekolah.</p>
-                            <p>2. Pencapaian nilai rata-rata raport setiap semester adalah 7,20.</p>
-                            <p>3. Berprestasi dalam bidang akademik dan non akademik.</p>
-                            <p>4. Unggul dalam pelaksanaan 7K.</p>
-                            <p>5. Pencapaian kompetensi dalam ujian nasional.</p>
-                            <p>6. Pencapaian dalam pengembangan pembelajaran PAIKEM GEMBROT.</p>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md text-start mt-5">
-                            <h4>MISI</h4>
-                            <br>
-                            <p>1. Mengembangkan sikap dan perilaku religius dilingkungan dalam dan luar sekolah.</p>
-                            <p>2. Menciptakan suasana pembelajaran yang menantang, menyenangkan, komunikatif, takut
-                                salah dan demokratis melalui PAIKEM GEMBROT.</p>
-                            <p>3. Meningkatkan peran warga sekolah dalam perilaku hidup bersih, sehat dan peduli
-                                lingkungan sekolah secara mandiri dan bersama-sama agar menjadi budaya sekolah.</p>
-                            <p>4. Mengembangkan budaya gemar membaca, rasa ingin tahu, bertoleransi, bekerjasama, saling
-                                menghargai, disiplin, jujur, kerja keras, kreatif dan mandiri.</p>
-                            <p>5. Meningkatkan prestasi siswa melalui pengembangan diri dan ekstrakurikuler.</p>
-                            <br>
-                        </div>
-                    </div>
+    </section>
+    <section>
+        <div id="media-sosial" class="container-fluid" style=" margin-bottom: 175px;">
+            <div class="row text-center d-flex justify-content-center align-content-center mb-5">
+                <div class="hubungi-kami">
+                    <h1>Tentang Kami, Kunjungi :</h1>
                 </div>
-
-                <!-- konten samping -->
-                <div class="col-md-4 border-start">
-                    <div class="row">
-                        <div class="col">
-                            <h3>Daftar Kepala Sekolah</h3>
-                        </div>
+                <div class="row text-center d-flex justify-content-center align-content-center mt-5">
+                    <div class="col-md-3">
+                        <a href="https://facebook.com/"><img src="img/facebook.png" class="card-img-top w-25"
+                                alt="facebook"></a>
                     </div>
-                    <div class="row">
-                        <div class="col-md d-flex justify-content-center align-content-center">
-                            <img src="img/pkepsek.png" alt="pkepsek1">
-                        </div>
-                        <div class="col-md mt-3">
-                            <h5>SYAMSIAR, S.Ag</h5>
-                            <p>Tahun 2019-2020</p>
-                        </div>
+                    <div class="col-md-3">
+                        <a href="https://youtube.com/"><img src="img/youtube.png"
+                                class="card-img-top w-25 align-items-center mt-2" alt="Youtobe Smeplea"></a>
                     </div>
-                    <div class="row mt-4">
-                        <div class="col-md d-flex justify-content-center align-content-center">
-                            <img src="img/pkepsek.png" alt="pkepsek2">
-                        </div>
-                        <div class="col-md mt-3">
-                            <h5>AMIRULLAH, S.E</h5>
-                            <p>Tahun 2020-Sekarang</p>
-                        </div>
-                    </div>
-                    <div class="row mt-4">
-                        <div class="col-md d-flex justify-content-center align-content-center">
-                            <img src="img/pkepsek.png" alt="pkepsek2">
-                        </div>
-                        <div class="col-md mt-3">
-                            <h5>WIRA FITRIA, S.Pd</h5>
-                            <p>Tahun 2022- ...</p>
-                        </div>
+                    <div class="col-md-3">
+                        <a href="https://instagram.com/"><img src="img/instagram.png" class="card-img-top w-25"
+                                alt="Instagram Smepela"></a>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-
-    <!-- halaman pengumuman dengan default display none -->
+    </section>
     <div id="halaman-pengumuman" class="container-fluid" style="display: none;">
         <div class="container">
             <div class="row text-center">
@@ -439,261 +430,6 @@
             </div>
         </div>
     </div>
-
-    <!-- halaman berita dengan default display none -->
-    <div id="halaman-berita" class="container-fluid" style="display: none;">
-
-        <!-- Bagian Kepala -->
-        <div class="container">
-            <div class="row text-start">
-                <div class="col mt-3">
-                    <h1>BERITA.SMEPELA</h1>
-                    <hr>
-                </div>
-            </div>
-        </div>
-
-        <!-- Konten Utama -->
-        <div class="container">
-            <div id="kumpulan-berita" class="row min-vh-100">
-                <div class="col-md-8">
-                    <div class="container d-flex justify-content-start align-content-center" style="width: 100%;">
-                        <ul class="nav nav-tabs">
-                            <li class="nav-item">
-                                <a id="b-utama" class="nav-link active" aria-current="page" href="#">Utama</a>
-                            </li>
-                            <li class="nav-item">
-                                <a id="b-prestasi" class="nav-link" href="#" onclick="Prestasi()">Prestasi</a>
-                            </li>
-                            <li class="nav-item">
-                                <a id="b-organisasi" class="nav-link" href="#">Organisasi</a>
-                            </li>
-                            <li class="nav-item">
-                                <a id="b-perayaan" class="nav-link" href="#">Perayaan</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div id="berita-u1" class="berita-utama mt-4" style="display: none;">
-                        <h1>Suka Cita Acara Kelulusan Peserta Didik SMP Negeri 5
-                            Payung
-                            2021-2022.</h1>
-                        <div class="row">
-                            <div class="col-md">
-                                <span>Senin, 24 Mei 2022</span>
-                            </div>
-                            <div class="col-md text-end">
-                                <span>Oleh : Tim Smepela</span>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col d-flex justify-content-center align-content-center mt-4">
-                                <img src="img/lulus2022.jpg" alt="kelulusan 2022" style="width: 80%; padding: 5px;">
-                            </div>
-                        </div>
-                        <div class="isi-berita">
-                            <br>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum at labore distinctio hic
-                                officia voluptate, alias, aspernatur commodi cum vero iusto dicta ducimus quibusdam
-                                veniam temporibus iste doloribus tenetur rem. Esse reiciendis itaque voluptatibus
-                                perferendis, laborum minima consectetur, ad temporibus dignissimos adipisci libero
-                                placeat excepturi, quas at non dolorem exercitationem.</p>
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non suscipit necessitatibus,
-                                nesciunt expedita tempore nam dolor ea. Cupiditate ea neque iure excepturi nobis
-                                doloribus suscipit? Deserunt similique sequi vitae perferendis laboriosam dolor
-                                explicabo. Amet molestiae soluta qui accusamus placeat. Voluptate libero sit harum qui
-                                nihil.
-                            </p>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, minima mollitia in
-                                necessitatibus aspernatur voluptate temporibus, commodi, inventore ullam aut veniam
-                                provident ratione voluptas laborum. Exercitationem obcaecati, nam esse quidem optio quos
-                                suscipit cumque in qui minima quo mollitia fugit cupiditate perferendis dolorum
-                                temporibus hic eum, pariatur consequatur quam repellendus.</p>
-                        </div>
-                        <hr>
-                    </div>
-                    <div id="berita-u2" class="berita-utama mt-4" style="display: block;">
-                        <h1>Kemeriahan HUT Kemerdekaan RI ke-77 di SMP Negeri 5 Payung.</h1>
-                        <div class="row">
-                            <div class="col-md">
-                                <span>Rabu, 17 Agustus 2022</span>
-                            </div>
-                            <div class="col-md text-end">
-                                <span>Oleh : Tim Smepela</span>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col d-flex justify-content-center align-content-center mt-4">
-                                <img src="img/hut77.jpg" alt="HUT RI KE-77" style="width: 80%; padding: 5px;">
-                            </div>
-                        </div>
-                        <div class="isi-berita-satu">
-                            <br>
-                            <p>BERITA.SMEPELA - Rabu, 17 Agustus 2022 Peringatan HUT RI ke-77. Upacara dilaksakan di
-                                lapangan sepak bola kecamatan payung. Upacara yang dilaksanakan dihadiri oleh seluruh
-                                sekolah yang ada di kecamatan payung. salah satunya SMP Negeri 5 Payung, dengan
-                                partisipasi peserta 1 regu perwakilan sekolah beserta guru dan tenaga kependidikan.
-                                Upacara terlaksana dengan lancar dan hikmat.</p>
-                            <p>"Penting sekali diadakannya rangkaian kegiatan memperingati kemerdekaan RI untuk
-                                menumbuhkan rasa cinta tanah air dan mengenang jasa para pahlawan. antusias siswa sangat
-                                tinggi karena sebelumnya pelaksanaan peringatan kemerdekaan RI terbatas karena pandemi"
-                                tutur ibu wira Fitria selaku kepala SMP Negeri 5
-                                Payung.</p>
-                            <p>Rangkaian peringatan HUT RI ke-77 dilanjutkan disekolah masing-masing. Termasuk SMP
-                                Negeri 5 Payung. Dalam rangka memeriahkan HUT RI ke-77 SMP Negeri 5 Payung mengadakan
-                                lomba-lomba yang diikuti oleh seluruh peserta didik di SMP Negeri 5 Payung. yaitu lomba
-                                Senam, Lomba Makan Kerupuk, estapet sarung dan memasukkan paku ke dalam botol. kegiatan
-                                lomba berjalan dengan lancar, meriah dan antusias.</p>
-                        </div>
-                        <hr>
-                    </div>
-                    <div id="berita-u3" class="berita-utama" style="display: block;">
-                        <h1>Semangat Delegasi SMP Negeri 5 Payung untuk Piala Kemerdekaan U-13 Parma Jaya Academy.</h1>
-                        <div class="row">
-                            <div class="col-md">
-                                <span>Minggu, 28 Agustus 2022</span>
-                            </div>
-                            <div class="col-md text-end">
-                                <span>Oleh : Tim Smepela</span>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col d-flex justify-content-center align-content-center mt-4">
-                                <img src="img/sepak-bola.jpg" alt="piala kemerdekaan u-13"
-                                    style="width: 80%; padding: 5px;">
-                            </div>
-                        </div>
-                        <div class="isi-berita">
-                            <br>
-                            <p>BERITA.SMEPELA - Dalam rangka memperingati Hari Ulang Tahun Kemerdekaan Republik
-                                Indonesia ke-77, Parma Jaya Academy melaksanakan "PIALA KEMERDEKAAN U-13" bertujuan
-                                menjaring bakat sepak bola usia dini yang unggul dan berdaya saing. Turnamen sepakbola
-                                ini di selenggarakan di desa Malik yang di ketuai Pak Adi Wijaya dalam rangka merayakan
-                                kemerdekaan.
-                                Turnamen ini di selenggarakan selama 2 hari yaitu hari Sabtu, 27 Agustus 2022 dan
-                                Minggu, 28 Agusus 2022.</p>
-                            <p>
-                                Pertandingan pertama pada hari Sabtu yaitu SMP Negeri 5 Payung Berhadapan dengan SD
-                                Negeri 4
-                                Payung karena sistem pertandingannya campuran SD dengan SMP.
-                                Pada Hari Sabtu Tersebut SMP Negeri 5 Payung Berhadapan dengan SD Negeri 4 Payung dengan
-                                skor imbang
-                                1-1.
-                                Lalu terjadilah adu pinalti untk merebut posisi ataupun tiket sebagai tim yang masuk ke
-                                dalam perempat final.
-                                Kemenangan berpihak ke SMP Negeri 5 Payung
-                                Pertandingan dilanjutkan pada hari Minggu.
-                                Ada 4 Tim yang masuk ke perempat final yaitu SMP Negeri 1 Payung, SMP Negeri 2 Payung,
-                                SMP Negeri 3 Payung Dan Diikuti SMP Negeri 5 Payung.</p>
-                            <p>"Apa yang sudah kita dapatkan jadikan sebagai motivasi bagi diri sendiri untuk terus
-                                mengembangkan potensi yang dimiliki. jangan cepat puas dengan apa yang sudah didapatkan,
-                                tetap semangat dan terus berlatih." ujar Pak Ziaudin selaku pelatih.</p>
-                            <p>Sistem pertandingan di rubah yang sebelumnya sistem gugur kemudian menjadi sistem
-                                pertemuan atau sistem point.
-                                Pertandingan pertama SMP Negeri 5 Payung VS SMP Negeri 1 Payung dengan skor 3-0 di
-                                menangkan
-                                SMP Negeri 5 Payung.
-                                Pertandingan ke dua SMP Negeri 5 Payung VS SMP Negeri 2 Payung dengan skor 2-0 di
-                                menangkan SMP Negeri 5 Payung.
-                                Dan Pertandingan ke-3 yang menjadi penentu SMP Negeri 5 Payung VS SMP Negeri 3 Payung
-                                dengan skor 0-0.
-                                Dengan skor Tersebut SMP Negeri 5 Payung mengunci gelar juara 1 dan membawa Piala
-                                Bergilir dan Piala tetap ke SMP Negeri 5 Payung.</p>
-                        </div>
-                        <hr>
-                    </div>
-                    <div id="berita-u4" class="berita-utama" style="display: none;">
-                        <h1>Pisah Sambut Kepala SMP Negeri 5 Payung.</h1>
-                        <div class="row">
-                            <div class="col-md">
-                                <span>Rabu, 31 Agustus 2022</span>
-                            </div>
-                            <div class="col-md text-end">
-                                <span>Oleh : Tim Smepela</span>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col d-flex justify-content-center align-content-center mt-4">
-                                <img src="img/Pisah-Sambut- Kepsek.png" alt="Pisah Sambut Kepsek Smepela"
-                                    style="width: 80%; padding: 5px;">
-                            </div>
-                        </div>
-                        <div class="isi-berita">
-                            <br>
-                            <p>BERITA.SMEPELA - Sehubungan dengan telah diterimanya SK Penempatan Kepala Sekolah oleh Dinas Pendidikan dan Kebudayaan Bangka Selatan. Ibu Wira Fitria, S.Pd di SMP Negeri 5 Payung. Dilaksanakanlah Acara Pisah Sambut Kepala SMP Negeri 5 Payung yang dihadiri oleh Ibu Wira Fitria, S.Pd sebagai kepala SMP Negeri 5 Payung, Bpk. Amirullah, SE kepala SMP Negeri 5 Payung yang lama, Ketua Komite, Bendahara Komite, Guru dan Tenaga Kependidikan serta perwakilah siswa/i SMP Negeri 5 Payung.</p>
-                            <p>Dalam sambutannya Bpk. Amirullah, SE menyampaikan bahwa jabatan kepala sekolah merupakan sebuah tugas tambahan yang diberikan kepada seorang guru sama halnya seperti tugas tambahan lainnya yang diberikan kepada guru tertentu hanya saja yang membedakannya adalah jabatan kepala sekolah dibuatkan SK dari Dinas Pendidikan sedangkan tugas tambahan guru disekolah seperti pembina ekstrakurikuler, pembina OSIS dan lainnya dibuatkan SK dari kepala sekolah.</p>
-                            <p>"jabatan kepala sekolah merupakan sebuah amanah yang diberikan kepada saya untuk mendampingi bapak dan ibu guru disekolah. saya akan menjalankan tugas dengan mengacu kepada <i>critical thingking, colaboration, communication dan creative</i>" ungkap Ibu Wira Fitria, S.Pd kepala SMP Negeri 5 Payung.</p>
-                            <p>Ibu Tanti Kurniawati, S.Pd dalam sambutannya menyampaikan "saya pribadi dan mewakili guru-guru dan tenaga kependidikan di SMP Negeri 5 Payung mengucapkan banyak terimakasih kepada bapak Amirullah, SE atas bimbingannya selama kurang lebih 2 tahun 2 bulan. serta pengetahuan-pengetahuan dan nasihat yang diberikan kepada kami. Semoga Bapak sukses selalu bertugas ditempat yang baru. dan untuk ibu Wira Fitria, S.Pd selaku Kepala SMP Negeri 5 Payung yang sudah bertugas, Selamat datang ibu dan selamat bertugas di SMP Negeri 5 Payung.</p>
-                            <p>Setelah Sambutan-sambutan disampaikan acara dilanjutkan dengan penandatanganan berita acara, penyerahan documen dan pemberian plakat kenangan dari SMP Negeri 5 Payung. Dilanjutkan dengan foto bersama. sebelum pembacaan doa terlebih dahulu ditayangkan dokumentasi kebersamaan bersama Bpk. Amirullah, SE selama menjadi Kepala SMP Negeri 5 Payung. Setelah pembacaan doa acara ditutup dengan pemberian hadiah kenang-kenangan dari guru dan tenaga kependidikan, pramukan dan siswa sMP Negeri 5 Payung ditutup dengan salam-salaman.</p>
-                        </div>
-                        <hr>
-                    </div>
-                    <h5 id="show-all" class="text-end"><i class="bi bi-arrow-down-circle-fill text-primary btn fs-1" onclick="Berita()"></i></h5>
-                </div>
-
-                <!-- konten samping -->
-                <div class="col-md-4 border-start p-3">
-                    <h3>Arsip</h3>
-                    <hr>
-                    <ul class="gap-5">
-                        <li>Juli 2022 <i id="list-button-juli" class="bi bi-caret-down" style="display: inline-block;"
-                                onclick="ListArsipJuli()"></i><i id="list-button-juli-tutup"
-                                class="bi bi-caret-down-fill" style="display: none;" onclick="ListArsipJuliTutup()"></i>
-                        </li>
-                        <div id="list-arsip-juli" class="list-arsip" style="display: none;">
-                            <ul>
-                                <li><a href="" style="text-decoration: none;">PPDB 2022</a> </li>
-                            </ul>
-                        </div>
-                        <li>Agustus 2022 <i id="list-button-agustus" class="bi bi-caret-down"
-                                style="display: inline-block;" onclick="ListArsipAgustus()"></i><i
-                                id="list-button-agustus-tutup" class="bi bi-caret-down-fill" style="display: none;"
-                                onclick="ListArsipAgustusTutup()"></i>
-                        </li>
-                        <div id="list-arsip-agustus" class="list-arsip-agustus" style="display: none;">
-                            <ul>
-                                <li><a href="#berita-u2" style="text-decoration: none;">Peringatan HUT RI Ke-77</a>
-                                </li>
-                                <li><a href="#berita-u3" style="text-decoration: none;">Semangat Delegasi SMP Negeri 5 Payung untuk Piala Kemerdekaan U-13 Parma Jaya Academy.</a>
-                                </li>
-                                <li><a href="#berita-u4" style="text-decoration: none;">Pisah Sambut Kepala SMP Negeri 5 Payung.</a>
-                                </li>
-                            </ul>
-                        </div>
-
-                        <li>September 2022 <i id="list-button-september" class="bi bi-caret-down"
-                                style="display: inline-block;" onclick="ListArsipSeptember()"></i><i
-                                id="list-button-september-tutup" class="bi bi-caret-down-fill" style="display: none;"
-                                onclick="ListArsipSeptemberTutup()"></i>
-                        </li>
-                        <div id="list-arsip-september" class="list-arsip-september" style="display: none;">
-                            <ul>
-                                <li><a href="#" style="text-decoration: none;">Belum ada berita</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- kontak -->
-    <div id="halaman-kartu-medsos" class="container-fluid" style="display: none;">
-        <div class="row text-center d-flex justify-content-center align-content-center min-vh-100">
-            <div class="hubungi-kami mb-5">
-                <h3>Tentang Kami, Kunjungi :</h3>
-            </div>
-            <div class="col-md-3">
-                <a href=""><img src="img/facebook.png" class="card-img-top w-25" alt="facebook"></a>
-            </div>
-            <div class="col-md-3">
-                <a href="https://mustomi.github.io/smpn5payung"><img src="img/website.png" class="card-img-top w-25"
-                        alt="website"></a>
-            </div>
-        </div>
-    </div>
-
-    <!-- Footer -->
     <div class="container-fluid text-center d-flex align-content-center justify-content-between"
         style="background-color: #8a8a8a;">
         <div class="container-fluid">
@@ -702,38 +438,33 @@
                     <h3>Alamat :</h3>
                     <span>Jl. Batin Tikal, Desa Ranggung, Kec. Payung</span>
                     <p>Kab. Bangka Selatan, Kepulauan Bangka Belitung</p>
-                    <p>Kode Pos : 22339</p>
+                    <p>Kode Pos : 33778</p>
                 </div>
                 <div class="col-md-5 text-end mt-1 medsos">
-                    <h3>Media Sosial :</h3>
-                    <p><i class="bi bi-facebook" style="color: blue;"></i> <a href="">smpn5payung</a></p>
-                    <p><i class="bi bi-instagram" style="color: orange;"></i> <a href="">smpn5payung</a></p>
-                    <p><i class="bi bi-whatsapp text-success ms-5"></i> <a href=""> +62 | aaa bbbb cccc</a></p>
-                    <p><i class="bi bi-globe2" style="color: blue;"></i> <a href="">smpn5payung.github.io</a></p>
+                    <h4>Kontak Kami:</h4>
+                    <div>
+                        <a href="https://wa.me/083878854612"> +62 | 838 7885 4612<i
+                                class="bi bi-whatsapp text-success ms-2"></i></a>
+                    </div>
+                    <div>
+                        <a href="mailto:smpn5pyg@gmail.com">
+                            smpn5pyg@gmail.com<i class="bi bi-envelope-check-fill text-primary ms-2"></i></a>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
     </div>
     <div class=" container-fluid p-2 text-center" style="background-color: rgb(124, 114, 114);">
-        <p class="text-white mt-3">copyright <i class="bi bi-c-circle text-white"></i> 2022 | SMP NEGERI 5 PAYUNG</p>
+        <p class="text-white mt-3">2022 <i class="bi bi-c-circle text-white"></i> | SMP NEGERI 5
+            PAYUNG</p>
     </div>
 
-    <!-- Optional JavaScript; choose one of the two! -->
-
-    <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
 
-    <!-- My Script -->
     <script src="js/script.js"></script>
-
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
-            <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
-        -->
 </body>
 
 </html>
