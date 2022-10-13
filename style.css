@@ -107,6 +107,13 @@
 
 /* all in one */
 
+@media screen and (max-width: 750px) {
+    .sosmed {
+        margin-top: 40px;
+    }
+  }
+
+
 /* mode malam */
 .dark {
     background-color: black;
