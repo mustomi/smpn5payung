@@ -39,6 +39,9 @@ const listButtonAgustTutup = document.getElementById("list-button-agustus-tutup"
 const listArsipSept = document.getElementById("list-arsip-september")
 const listButtonSept = document.getElementById("list-button-september")
 const listButtonSeptTutup = document.getElementById("list-button-september-tutup")
+const listArsipOktober = document.getElementById("list-arsip-oktober")
+const listButtonOktober = document.getElementById("list-button-oktober")
+const listButtonOktoberTutup = document.getElementById("list-button-oktober-tutup")
 
 const ListArsipJuli = () => {
     listArsipJuli.style.display = "block"
@@ -74,6 +77,18 @@ const ListArsipSeptemberTutup = () => {
     listArsipSept.style.display = "none";
     listButtonSept.style.display = "inline-block";
     listButtonSeptTutup.style.display = "none";
+}
+
+const ListArsipOktober = () => {
+    listArsipOktober.style.display = "block";
+    listButtonOktober.style.display = "none";
+    listButtonOktoberTutup.style.display = "inline-block"
+}
+
+const ListArsipOktoberTutup = () => {
+    listArsipOktober.style.display = "none";
+    listButtonOktober.style.display = "inline-block";
+    listButtonOktoberTutup.style.display = "none";
 }
 
 const berandaAktif = document.getElementById("beranda-aktif")

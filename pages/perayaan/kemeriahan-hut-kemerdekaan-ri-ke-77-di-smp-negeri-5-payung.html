@@ -1,0 +1,323 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- Bootstrap Offline -->
+    <link rel="stylesheet" href="../../css/bootstrap.min.offline.css">
+
+
+    <!-- Bootsrap icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+
+    <!-- My Style -->
+    <link rel="stylesheet" href="../../style.css">
+
+    <title>..| Berita.Smepela</title>
+</head>
+
+<body>
+    <!-- Bagian Awal Navbar -->
+    <nav id="my-navbar" class="navbar navbar-expand-lg navbar-dark bg-dark shadow fixed-top">
+        <div class="container-fluid">
+            <div>
+                <a class="navbar-brand" href="#"><i class="bi bi-globe2 text-primary"> </i>Smepela.Site</a>
+            </div>
+            <div>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul id="tombol-mode" class="navbar-nav text-light fs-3 me-4">
+                        <li class="toggle" style="display: none;" id="mode-siang" role="button" onclick="Siang()"><i
+                                class="bi bi-toggle-on"></i></li>
+                        <li class="toggle" style="display: block;" id="mode-malam" role="button" onclick="Malam()"><i
+                                class="bi bi-toggle-off"></i></li>
+
+                    </ul>
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a id="beranda-aktif" class="nav-link active navMenu" aria-current="page"
+                                href="../../index.html">Beranda</a>
+                        </li>
+                    </ul>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+    <!-- Bagian Akhir Navbar -->
+
+    <section>
+        <div id="berita" class="target"></div>
+        <!-- halaman berita dengan default display none -->
+        <div id="halaman-berita" class="container-fluid">
+
+            <!-- Bagian Kepala -->
+            <div class="container">
+                <div class="row text-start">
+                    <div class="col mt-3">
+                        <h1>BERITA.SMEPELA</h1>
+                        <hr>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Konten Utama -->
+            <div class="container">
+                <div id="kumpulan-berita" class="row min-vh-100">
+                    <div class="col-md-8">
+                        <div class="container d-flex justify-content-start align-content-center" style="width: 100%;">
+                            <ul class="nav nav-tabs">
+                                <li class="nav-item">
+                                    <a id="b-utama" class="nav-link" aria-current="page"
+                                        href="../utama/peringatan-maulid-nabi-muhammad-saw-2022.html">Utama</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a id="b-prestasi" class="nav-link"
+                                        href="../prestasi/berita-prestasi.html">Prestasi</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a id="b-organisasi" class="nav-link"
+                                        href="../organisasi/berita-organisasi.html">Organisasi</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a id="b-perayaan" class="nav-link active"
+                                        href="../perayaan/berita-perayaan.html">Perayaan</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div id="berita-perayaan-170822" class="berita-utama mt-4" style="display: block;">
+                            <h1>Kemeriahan HUT Kemerdekaan RI ke-77 di SMP Negeri 5 Payung.</h1>
+                            <div class="row">
+                                <div class="col-md">
+                                    <span>Rabu, 17 Agustus 2022</span>
+                                </div>
+                                <div class="col-md text-end">
+                                    <span>Oleh : Tim Smepela</span>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col d-flex justify-content-center align-content-center mt-4">
+                                    <img src="../../img/hut77.jpg" alt="HUT RI KE-77" style="width: 80%; padding: 5px;">
+                                </div>
+                            </div>
+                            <div class="isi-berita-satu">
+                                <br>
+                                <p>BERITA.SMEPELA - Rabu, 17 Agustus 2022 Peringatan HUT RI ke-77. Upacara
+                                    dilaksakan di
+                                    lapangan sepak bola kecamatan payung. Upacara yang dilaksanakan dihadiri
+                                    oleh seluruh
+                                    sekolah yang ada di kecamatan payung. salah satunya SMP Negeri 5 Payung,
+                                    dengan
+                                    partisipasi peserta 1 regu perwakilan sekolah beserta guru dan tenaga
+                                    kependidikan.
+                                    Upacara terlaksana dengan lancar dan hikmat.</p>
+                                <p>"Penting sekali diadakannya rangkaian kegiatan memperingati kemerdekaan RI
+                                    untuk
+                                    menumbuhkan rasa cinta tanah air dan mengenang jasa para pahlawan. antusias
+                                    siswa sangat
+                                    tinggi karena sebelumnya pelaksanaan peringatan kemerdekaan RI terbatas
+                                    karena pandemi"
+                                    tutur ibu wira Fitria selaku kepala SMP Negeri 5
+                                    Payung.</p>
+                                <p>Rangkaian peringatan HUT RI ke-77 dilanjutkan disekolah masing-masing.
+                                    Termasuk SMP
+                                    Negeri 5 Payung. Dalam rangka memeriahkan HUT RI ke-77 SMP Negeri 5 Payung
+                                    mengadakan
+                                    lomba-lomba yang diikuti oleh seluruh peserta didik di SMP Negeri 5 Payung.
+                                    yaitu lomba
+                                    Senam, Lomba Makan Kerupuk, estapet sarung dan memasukkan paku ke dalam
+                                    botol. kegiatan
+                                    lomba berjalan dengan lancar, meriah dan antusias.</p>
+                            </div>
+                            <hr>
+                        </div>
+                        <div class="berita-utama">
+                            <h4><a href="../utama/peringatan-maulid-nabi-muhammad-saw-2022.html">Memperingati Maulid
+                                    Nabi Muhammad SAW 1444 H / 2022 M.</a></h4>
+                            <div class="row">
+                                <div class="col-md">
+                                    <span>Selasa, 11 Okober 2022</span>
+                                </div>
+                                <div class="col-md text-end">
+                                    <span>Oleh : Tim Smepela</span>
+                                </div>
+                            </div>
+                            <hr>
+                        </div>
+                        <div class="berita-utama">
+                            <h4><a href="../utama/semangat-tim-pramuka-smpn5payung-perjusami.html">Semangat
+                                    Regu Pramuka SMP Negeri 5 Payung PERJUSAMI.</a></h4>
+                            <div class="row">
+                                <div class="col-md">
+                                    <span>Minggu, 16 Oktober 2022</span>
+                                </div>
+                                <div class="col-md text-end">
+                                    <span>Oleh : Tim Smepela</span>
+                                </div>
+                            </div>
+                            <hr>
+                        </div>
+                        <div class="berita-utama">
+                            <h4><a href="../utama/pisah-sambut-kepala-smp-negeri-5-payung.html">Pisah Sambut Kepala SMP
+                                    Negeri 5 Payung.</a></h4>
+                            <div class="row">
+                                <div class="col-md">
+                                    <span>Rabu, 31 Agustus 2022</span>
+                                </div>
+                                <div class="col-md text-end">
+                                    <span>Oleh : Tim Smepela</span>
+                                </div>
+                            </div>
+                            <hr>
+                        </div>
+                        <div class="berita-utama mt-4">
+                            <h4><a
+                                    href="../utama/pelantikan-pengurus-osis-smp-negeri-5-payung-masa-bakti-2022-2023.html">Pelantikan
+                                    Pengurus OSIS SMP Negeri 5 Payung Masa Bakti 2022/2023.</a></h4>
+                            <div class="row">
+                                <div class="col-md">
+                                    <span>Selasa, 20 September 2022</span>
+                                </div>
+                                <div class="col-md text-end">
+                                    <span>Oleh : Tim Smepela</span>
+                                </div>
+                            </div>
+                            <hr>
+                        </div>
+                    </div>
+
+                    <!-- konten samping -->
+                    <div class="col-md-4 border-start p-3">
+                        <h3>Arsip</h3>
+                        <hr>
+                        <ul class="gap-5">
+                            <li>Juli 2022 <i id="list-button-juli" class="bi bi-caret-down"
+                                    style="display: inline-block;" onclick="ListArsipJuli()"></i><i
+                                    id="list-button-juli-tutup" class="bi bi-caret-down-fill" style="display: none;"
+                                    onclick="ListArsipJuliTutup()"></i>
+                            </li>
+                            <div id="list-arsip-juli" class="list-arsip" style="display: none;">
+                                <ul>
+                                    <li><a href="" style="text-decoration: none;"> tidak tersedia</a></li>
+                                </ul>
+                            </div>
+                            <li>Agustus 2022 <i id="list-button-agustus" class="bi bi-caret-down"
+                                    style="display: inline-block;" onclick="ListArsipAgustus()"></i><i
+                                    id="list-button-agustus-tutup" class="bi bi-caret-down-fill" style="display: none;"
+                                    onclick="ListArsipAgustusTutup()"></i>
+                            </li>
+                            <div id="list-arsip-agustus" class="list-arsip-agustus" style="display: none;">
+                                <ul>
+                                    <li><a href="../perayaan/kemeriahan-hut-kemerdekaan-ri-ke-77-di-smp-negeri-5-payung.html"
+                                            style="text-decoration: none;">Peringatan HUT RI
+                                            Ke-77</a>
+                                    </li>
+                                    <li><a href="../prestasi/semangat-delegasi-smp-negeri-5-payung-untuk-piala-kemerdekaan-u-13-parma-jaya-academy.html"
+                                            style="text-decoration: none;">Semangat Delegasi
+                                            SMP Negeri 5
+                                            Payung untuk Piala Kemerdekaan U-13 Parma Jaya Academy.</a>
+                                    </li>
+                                    <li><a href="../utama/pisah-sambut-kepala-smp-negeri-5-payung.html"
+                                            style="text-decoration: none;">Pisah Sambut Kepala
+                                            SMP Negeri 5
+                                            Payung.</a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <li>September 2022 <i id="list-button-september" class="bi bi-caret-down"
+                                    style="display: inline-block;" onclick="ListArsipSeptember()"></i><i
+                                    id="list-button-september-tutup" class="bi bi-caret-down-fill"
+                                    style="display: none;" onclick="ListArsipSeptemberTutup()"></i>
+                            </li>
+                            <div id="list-arsip-september" class="list-arsip-september" style="display: none;">
+                                <ul>
+                                    <li><a href="../utama/pelantikan-pengurus-osis-smp-negeri-5-payung-masa-bakti-2022-2023.html"
+                                            style="text-decoration: none;">Pelantikan Pengurus Osis SMP Negeri 5 Payung
+                                            2022</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <li>Oktober 2022 <i id="list-button-oktober" class="bi bi-caret-down"
+                                    style="display: inline-block;" onclick="ListArsipOktober()"></i><i
+                                    id="list-button-oktober-tutup" class="bi bi-caret-down-fill" style="display: none;"
+                                    onclick="ListArsipOktoberTutup()"></i>
+                            </li>
+                            <div id="list-arsip-oktober" class="list-arsip-oktober" style="display: none;">
+                                <ul>
+                                    <li><a href="peringatan-maulid-nabi-muhammad-saw-2022.html"
+                                            style="text-decoration: none;">Memperingati Maulid Nabi Muhammad SAW 1444 H
+                                            / 2022 M.</a>
+                                    </li>
+                                    <li><a href="semangat-tim-pramuka-smpn5payung-perjusami.html"
+                                            style="text-decoration: none;">Semangat Regu Pramuka SMP Negeri 5 Payung
+                                            PERJUSAMI.</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <div class="container-fluid text-center d-flex align-content-center justify-content-between"
+        style="background-color: #8a8a8a;">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-7 text-start mt-1 alamat">
+                    <h3>Alamat :</h3>
+                    <span>Jl. Batin Tikal, Desa Ranggung, Kec. Payung</span>
+                    <p>Kab. Bangka Selatan, Kepulauan Bangka Belitung</p>
+                    <p>Kode Pos : 33778</p>
+                </div>
+                <div class="col-md-5 text-end mt-1 medsos">
+                    <h4>Kontak Kami:</h4>
+                    <div>
+                        <a href="https://wa.me/083878854612"> +62 | 838 7885 4612<i
+                                class="bi bi-whatsapp text-success ms-2"></i></a>
+                    </div>
+                    <div>
+                        <a href="mailto:smpn5pyg@gmail.com">
+                            smpn5pyg@gmail.com<i class="bi bi-envelope-check-fill text-primary ms-2"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class=" container-fluid p-2 text-center" style="background-color: rgb(124, 114, 114);">
+        <p class="text-white mt-3">copyright <i class="bi bi-c-circle text-white"></i> 2022 | SMP NEGERI 5
+            PAYUNG</p>
+    </div>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <!-- My Script -->
+    <script src="../../js/script.js"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
