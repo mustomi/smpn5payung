@@ -107,13 +107,23 @@
 
 /* all in one */
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 650px) {
     .sosmed {
         margin-top: 40px;
     }
     #amanat-mentri-sosial-RI {
-        width: 50%;
-        height: 50%;
+        width: 80%;
+        height: 80%;
+    }
+
+    .lptb {
+        display: none;
+    }
+  }
+
+@media screen and (min-width: 650px) {
+    .adr {
+        display: none;
     }
   }
 
