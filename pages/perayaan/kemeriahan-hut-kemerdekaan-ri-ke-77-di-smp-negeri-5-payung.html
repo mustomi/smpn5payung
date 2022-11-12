@@ -24,7 +24,6 @@
 </head>
 
 <body>
-    <!-- Bagian Awal Navbar -->
     <nav id="my-navbar" class="navbar navbar-expand-lg navbar-dark bg-dark shadow fixed-top">
         <div class="container-fluid">
             <div>
@@ -54,14 +53,10 @@
             </div>
         </div>
     </nav>
-    <!-- Bagian Akhir Navbar -->
 
     <section>
         <div id="berita" class="target"></div>
-        <!-- halaman berita dengan default display none -->
         <div id="halaman-berita" class="container-fluid">
-
-            <!-- Bagian Kepala -->
             <div class="container">
                 <div class="row text-start">
                     <div class="col mt-3">
@@ -71,7 +66,6 @@
                 </div>
             </div>
 
-            <!-- Konten Utama -->
             <div class="container">
                 <div id="kumpulan-berita" class="row min-vh-100">
                     <div class="col-md-8">
@@ -79,7 +73,7 @@
                             <ul class="nav nav-tabs">
                                 <li class="nav-item">
                                     <a id="b-utama" class="nav-link" aria-current="page"
-                                        href="../utama/peringatan-maulid-nabi-muhammad-saw-2022.html">Utama</a>
+                                        href="../utama/upacara-hari-pahlawan-tahun-2022-smp-negeri-5-payung.html">Utama</a>
                                 </li>
                                 <li class="nav-item">
                                     <a id="b-prestasi" class="nav-link"
@@ -168,7 +162,8 @@
                             <hr>
                         </div>
                         <div class="berita-utama">
-                            <h4><a href="../utama/upacara-peringatan-hari-sumpah-pemuda-ke-94-smp-Negeri-5-payung.html">Upacara Peringatan Hari Sumpah Pemuda Ke-94 di SMP Negeri 5 Payung.</a></h4>
+                            <h4><a href="../utama/upacara-peringatan-hari-sumpah-pemuda-ke-94-smp-Negeri-5-payung.html">Upacara
+                                    Peringatan Hari Sumpah Pemuda Ke-94 di SMP Negeri 5 Payung.</a></h4>
                             <div class="row">
                                 <div class="col-md">
                                     <span>Jum'at, 28 Oktober 2022</span>
@@ -180,12 +175,11 @@
                             <hr>
                         </div>
                         <div class="berita-utama mt-4">
-                            <h4><a
-                                    href="../utama/pelantikan-pengurus-osis-smp-negeri-5-payung-masa-bakti-2022-2023.html">Pelantikan
-                                    Pengurus OSIS SMP Negeri 5 Payung Masa Bakti 2022/2023.</a></h4>
+                            <h4><a href="../utama/upacara-hari-pahlawan-tahun-2022-smp-negeri-5-payung.html">Upacara
+                                    Hari Pahlawan Tahun 2022 SMP Negeri 5 Payung.</a></h4>
                             <div class="row">
                                 <div class="col-md">
-                                    <span>Selasa, 20 September 2022</span>
+                                    <span>Sabtu, 12 November 2022</span>
                                 </div>
                                 <div class="col-md text-end">
                                     <span>Oleh : Tim Smepela</span>
@@ -195,7 +189,6 @@
                         </div>
                     </div>
 
-                    <!-- konten samping -->
                     <div class="col-md-4 border-start p-3">
                         <h3>Arsip</h3>
                         <hr>
@@ -241,7 +234,7 @@
                             </li>
                             <div id="list-arsip-september" class="list-arsip-september" style="display: none;">
                                 <ul>
-                                    <li><a href="../utama/pelantikan-pengurus-osis-smp-negeri-5-payung-masa-bakti-2022-2023.html"
+                                    <li><a href="../organisasi/pelantikan-pengurus-osis-smp-negeri-5-payung-masa-bakti-2022-2023.html"
                                             style="text-decoration: none;">Pelantikan Pengurus Osis SMP Negeri 5 Payung
                                             2022</a>
                                     </li>
@@ -268,6 +261,19 @@
                                     </li>
                                 </ul>
                             </div>
+                            <li>November 2022 <i id="list-button-november" class="bi bi-caret-down"
+                                    style="display: inline-block;" onclick="ListArsipNovember()"></i><i
+                                    id="list-button-november-tutup" class="bi bi-caret-down-fill" style="display: none;"
+                                    onclick="ListArsipNovemberTutup()"></i>
+                            </li>
+                            <div id="list-arsip-november" class="list-arsip-november" style="display: none;">
+                                <ul>
+                                    <li><a href="../utama/upacara-hari-pahlawan-tahun-2022-smp-negeri-5-payung.html"
+                                            style="text-decoration: none;">Upacara Hari Pahlawan Tahun 2022 SMP Negeri 5
+                                            Payung.</a>
+                                    </li>
+                                </ul>
+                            </div>
                         </ul>
                     </div>
                 </div>
@@ -275,7 +281,6 @@
         </div>
     </section>
 
-    <!-- Footer -->
     <div class="container-fluid text-center d-flex align-content-center justify-content-between"
         style="background-color: #8a8a8a;">
         <div class="container-fluid">
