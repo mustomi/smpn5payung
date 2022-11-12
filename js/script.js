@@ -143,3 +143,137 @@ const PengumumanAktif = () => {
     beritaAktif.classList.remove('active')
     pengumumanAktif.classList.add('active')
 }
+
+const hlmn1 = document.getElementById("halaman-1")
+const hlmn1Active = document.getElementById("hlmn1-active")
+const hlmn2 = document.getElementById("halaman-2")
+const hlmn2Active = document.getElementById("hlmn2-active")
+const hlmn3 = document.getElementById("halaman-3")
+const hlmn3Active = document.getElementById("hlmn3-active")
+const hlmn4 = document.getElementById("halaman-4")
+const hlmn4Active = document.getElementById("hlmn4-active")
+const hlmn5 = document.getElementById("halaman-5")
+const hlmn5Active = document.getElementById("hlmn5-active")
+const hlmn6 = document.getElementById("halaman-6")
+const hlmn6Active = document.getElementById("hlmn6-active")
+const hlmn7 = document.getElementById("halaman-7")
+const hlmn7Active = document.getElementById("hlmn7-active")
+
+const Hlmn1 = () => {
+    hlmn1.style.display = "block"
+    hlmn1Active.classList.add('active')
+    hlmn2.style.display = "none"
+    hlmn2Active.classList.remove('active')
+    hlmn3.style.display = "none"
+    hlmn3Active.classList.remove('active')
+    hlmn4.style.display = "none"
+    hlmn4Active.classList.remove('active')
+    hlmn5.style.display = "none"
+    hlmn5Active.classList.remove('active')
+    hlmn6.style.display = "none"
+    hlmn6Active.classList.remove('active')
+    hlmn7.style.display = "none"
+    hlmn7Active.classList.remove('active')
+}
+
+const Hlmn2 = () => {
+    hlmn1.style.display = "none"
+    hlmn1Active.classList.remove('active')
+    hlmn2.style.display = "block"
+    hlmn2Active.classList.add('active')
+    hlmn3.style.display = "none"
+    hlmn3Active.classList.remove('active')
+    hlmn4.style.display = "none"
+    hlmn4Active.classList.remove('active')
+    hlmn5.style.display = "none"
+    hlmn5Active.classList.remove('active')
+    hlmn6.style.display = "none"
+    hlmn6Active.classList.remove('active')
+    hlmn7.style.display = "none"
+    hlmn7Active.classList.remove('active')
+}
+
+const Hlmn3 = () => {
+    hlmn1.style.display = "none"
+    hlmn1Active.classList.remove('active')
+    hlmn2.style.display = "none"
+    hlmn2Active.classList.remove('active')
+    hlmn3.style.display = "block"
+    hlmn3Active.classList.add('active')
+    hlmn4.style.display = "none"
+    hlmn4Active.classList.remove('active')
+    hlmn5.style.display = "none"
+    hlmn5Active.classList.remove('active')
+    hlmn6.style.display = "none"
+    hlmn6Active.classList.remove('active')
+    hlmn7.style.display = "none"
+    hlmn7Active.classList.remove('active')
+}
+
+const Hlmn4 = () => {
+    hlmn1.style.display = "none"
+    hlmn1Active.classList.remove('active')
+    hlmn2.style.display = "none"
+    hlmn2Active.classList.remove('active')
+    hlmn3.style.display = "none"
+    hlmn3Active.classList.remove('active')
+    hlmn4.style.display = "block"
+    hlmn4Active.classList.add('active')
+    hlmn5.style.display = "none"
+    hlmn5Active.classList.remove('active')
+    hlmn6.style.display = "none"
+    hlmn6Active.classList.remove('active')
+    hlmn7.style.display = "none"
+    hlmn7Active.classList.remove('active')
+}
+
+const Hlmn5 = () => {
+    hlmn1.style.display = "none"
+    hlmn1Active.classList.remove('active')
+    hlmn2.style.display = "none"
+    hlmn2Active.classList.remove('active')
+    hlmn3.style.display = "none"
+    hlmn3Active.classList.remove('active')
+    hlmn4.style.display = "none"
+    hlmn4Active.classList.remove('active')
+    hlmn5.style.display = "block"
+    hlmn5Active.classList.add('active')
+    hlmn6.style.display = "none"
+    hlmn6Active.classList.remove('active')
+    hlmn7.style.display = "none"
+    hlmn7Active.classList.remove('active')
+}
+
+const Hlmn6 = () => {
+    hlmn1.style.display = "none"
+    hlmn1Active.classList.remove('active')
+    hlmn2.style.display = "none"
+    hlmn2Active.classList.remove('active')
+    hlmn3.style.display = "none"
+    hlmn3Active.classList.remove('active')
+    hlmn4.style.display = "none"
+    hlmn4Active.classList.remove('active')
+    hlmn5.style.display = "none"
+    hlmn5Active.classList.remove('active')
+    hlmn6.style.display = "block"
+    hlmn6Active.classList.add('active')
+    hlmn7.style.display = "none"
+    hlmn7Active.classList.remove('active')
+}
+
+const Hlmn7 = () => {
+    hlmn1.style.display = "none"
+    hlmn1Active.classList.remove('active')
+    hlmn2.style.display = "none"
+    hlmn2Active.classList.remove('active')
+    hlmn3.style.display = "none"
+    hlmn3Active.classList.remove('active')
+    hlmn4.style.display = "none"
+    hlmn4Active.classList.remove('active')
+    hlmn5.style.display = "none"
+    hlmn5Active.classList.remove('active')
+    hlmn6.style.display = "none"
+    hlmn6Active.classList.remove('active')
+    hlmn7.style.display = "block"
+    hlmn7Active.classList.add('active')
+}

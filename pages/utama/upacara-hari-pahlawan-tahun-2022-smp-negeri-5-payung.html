@@ -134,10 +134,60 @@
                                 <p>Tanti Kurniawati, S.Pd. sebagai wakil kepala sekolah yang pada kesempatan ini sebagai
                                     pembina upacara dalam amanatnya membacakan sambutan Ibu Tri Rismaharini Menteri
                                     Sosial RI. Selengkapnya amanat Menteri Sosial RI dalam Rangka Hari Pahlawan Tahun
-                                    2022. Klik <a href="#amanat-mentri-sosial-RI" onclick=TampilAmanat()>disini</a>.</p>
-                                <div id="amanat-mentri-sosial-RI" style="display: none;">
-                                    <iframe src="../../img/amanat-menteri-sosial-ri-tahun-2022.pdf" width="750"
-                                        height="600" frameborder="0"></iframe>
+                                    2022. Klik <a style="cursor: pointer; color: blue;"
+                                        onclick=TampilAmanat()>disini</a>.</p>
+
+                                <div id="amanat-mentri-sosial-RI" style="display: none; text-align: center;">
+                                    <div>
+                                        <div>
+                                            <div id="halaman-1" style="display: block;">
+                                                <img width="600" height="auto"
+                                                    src="../../img/amanat-menteri-sosial-ri/1.jpg" alt="halaman 1">
+                                            </div>
+                                            <div id="halaman-2" style="display: none;">
+                                                <img width="600" height="auto"
+                                                    src="../../img/amanat-menteri-sosial-ri/2.jpg" alt="halaman 2">
+                                            </div>
+                                            <div id="halaman-3" style="display: none;">
+                                                <img width="600" height="auto"
+                                                    src="../../img/amanat-menteri-sosial-ri/3.jpg" alt="halaman 3">
+                                            </div>
+                                            <div id="halaman-4" style="display: none;">
+                                                <img width="600" height="auto"
+                                                    src="../../img/amanat-menteri-sosial-ri/4.jpg" alt="halaman 4">
+                                            </div>
+                                            <div id="halaman-5" style="display: none;">
+                                                <img width="600" height="auto"
+                                                    src="../../img/amanat-menteri-sosial-ri/5.jpg" alt="halaman 5">
+                                            </div>
+                                            <div id="halaman-6" style="display: none;">
+                                                <img width="600" height="auto"
+                                                    src="../../img/amanat-menteri-sosial-ri/6.jpg" alt="halaman 6">
+                                            </div>
+                                            <div id="halaman-7" style="display: none;">
+                                                <img width="600" height="auto"
+                                                    src="../../img/amanat-menteri-sosial-ri/7.jpg" alt="halaman 7">
+                                            </div>
+                                        </div>
+                                        <nav aria-label="Page navigation example">
+                                            <ul class="pagination justify-content-end">
+                                                <li id="hlmn1-active" class="page-item active"><a class="page-link" href="#halaman-1"
+                                                        onclick=Hlmn1()>1</a></li>
+                                                <li id="hlmn2-active" class="page-item"><a class="page-link" href="#halaman-2"
+                                                        onclick=Hlmn2()>2</a></li>
+                                                <li id="hlmn3-active" class="page-item"><a class="page-link" href="#halaman-3"
+                                                        onclick=Hlmn3()>3</a></li>
+                                                <li id="hlmn4-active" class="page-item"><a class="page-link" href="#halaman-4"
+                                                        onclick=Hlmn4()>4</a></li>
+                                                <li id="hlmn5-active" class="page-item"><a class="page-link" href="#halaman-5"
+                                                        onclick=Hlmn5()>5</a></li>
+                                                <li id="hlmn6-active" class="page-item"><a class="page-link" href="#halaman-6"
+                                                        onclick=Hlmn6()>6</a></li>
+                                                <li id="hlmn7-active" class="page-item"><a class="page-link" href="#halaman-7"
+                                                        onclick=Hlmn7()>7</a></li>
+                                            </ul>
+                                        </nav>
+                                    </div>
                                 </div>
                             </div>
                             <hr>
@@ -261,13 +311,14 @@
                             </div>
                             <li>November 2022 <i id="list-button-november" class="bi bi-caret-down"
                                     style="display: inline-block;" onclick="ListArsipNovember()"></i><i
-                                    id="list-button-november-tutup" class="bi bi-caret-down-fill"
-                                    style="display: none;" onclick="ListArsipNovemberTutup()"></i>
+                                    id="list-button-november-tutup" class="bi bi-caret-down-fill" style="display: none;"
+                                    onclick="ListArsipNovemberTutup()"></i>
                             </li>
                             <div id="list-arsip-november" class="list-arsip-november" style="display: none;">
                                 <ul>
                                     <li><a href="upacara-hari-pahlawan-tahun-2022-smp-negeri-5-payung.html"
-                                            style="text-decoration: none;">Upacara Hari Pahlawan Tahun 2022 SMP Negeri 5 Payung.</a>
+                                            style="text-decoration: none;">Upacara Hari Pahlawan Tahun 2022 SMP Negeri 5
+                                            Payung.</a>
                                     </li>
                                 </ul>
                             </div>
