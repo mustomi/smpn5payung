@@ -119,10 +119,15 @@
     .lptb {
         display: none;
     }
+
   }
 
 @media screen and (min-width: 650px) {
     .adr {
+        display: none;
+    }
+
+    #galeri {
         display: none;
     }
   }
