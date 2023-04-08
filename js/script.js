@@ -48,6 +48,11 @@ const listButtonNovemberTutup = document.getElementById("list-button-november-tu
 const listArsipMaret23 = document.getElementById("list-arsip-maret-23")
 const listButtonMaret23 = document.getElementById("list-button-maret-23")
 const listButtonMaret23Tutup = document.getElementById("list-button-maret-23-tutup")
+const listArsipApril23 = document.getElementById("list-arsip-april-23")
+const listButtonApril23 = document.getElementById("list-button-april-23")
+const listButtonApril23Tutup = document.getElementById("list-button-april-23-tutup")
+
+
 const tampilkanFileAmanat = document.getElementById("amanat-mentri-sosial-RI")
 
 const ListArsipJuli = () => {
@@ -120,6 +125,18 @@ const ListArsipMaret23Tutup = () => {
     listArsipMaret23.style.display = "none";
     listButtonMaret23.style.display = "inline-block";
     listButtonMaret23Tutup.style.display = "none";
+}
+
+const ListArsipApril23 = () => {
+    listArsipApril23.style.display = "block";
+    listButtonApril23.style.display = "none";
+    listButtonApril23Tutup.style.display = "inline-block";
+}
+
+const ListArsipApril23Tutup = () => {
+    listArsipApril23.style.display = "none";
+    listButtonApril23.style.display = "inline-block";
+    listButtonApril23Tutup.style.display = "none";
 }
 
 const TampilAmanat = () => {
