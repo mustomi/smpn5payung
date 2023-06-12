@@ -170,7 +170,7 @@ const BeritaAktif = () => {
 }
 
 const PengumumanAktif = () => {
-    alert("tidak ada pengumuman saat ini")
+    // alert("tidak ada pengumuman saat ini")
     berandaAktif.classList.remove('active')
     profilAktif.classList.remove('active')
     beritaAktif.classList.remove('active')
