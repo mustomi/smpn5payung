@@ -27,12 +27,8 @@
 }
 
 .mediaSosial a {
-    font-size: 10px;
+    font-size: 14px;
     text-decoration: none;
-}
-
-.hubungi a {
-    font-size: 16px;
 }
 
 .card {
@@ -111,6 +107,7 @@
     .sosmed {
         margin-top: 40px;
     }
+
     #amanat-mentri-sosial-RI {
         width: 90%;
         height: 90%;
@@ -120,6 +117,9 @@
         display: none;
     }
 
+    .bsr {
+        display: none;
+    }
   }
 
 @media screen and (min-width: 650px) {
@@ -127,9 +127,14 @@
         display: none;
     }
 
+    .sml {
+        display: none;
+    }
+
     #galeri {
         display: none;
     }
+
   }
 
 
