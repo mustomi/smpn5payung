@@ -1,37 +1,39 @@
 let body = document.body;
-const modeSiang = document.getElementById("mode-siang")
-const modeMalam = document.getElementById("mode-malam")
-const iconSiang = document.getElementById("icon-siang")
-const iconMalam = document.getElementById("icon-malam")
-const myNavbar = document.getElementById("my-navbar")
-const tombolMode = document.getElementById("tombol-mode")
+const modeSiang = document.getElementById("mode-siang");
+const modeMalam = document.getElementById("mode-malam");
+const iconSiang = document.getElementById("icon-siang");
+const iconMalam = document.getElementById("icon-malam");
+const myNavbar = document.getElementById("my-navbar");
+const tombolMode = document.getElementById("tombol-mode");
+const popupContent = document.querySelector(".popup-content");
 
 const Siang = () => {
-    body.classList.remove("dark")
-    myNavbar.classList.add("navbar-dark")
-    myNavbar.classList.add("bg-dark")
-    myNavbar.classList.remove("navbar-light")
-    myNavbar.classList.remove("bg-light")
-    tombolMode.classList.add("text-light")
-    tombolMode.classList.remove("text-dark")
-    modeSiang.style.display = "none"
-    modeMalam.style.display = "block"
+    body.classList.remove("dark");
+    myNavbar.classList.add("navbar-dark");
+    myNavbar.classList.add("bg-dark");
+    myNavbar.classList.remove("navbar-light");
+    myNavbar.classList.remove("bg-light");
+    tombolMode.classList.add("text-light");
+    tombolMode.classList.remove("text-dark");
+    modeSiang.style.display = "none";
+    modeMalam.style.display = "block";
 }
 
 const Malam = () => {
-    body.classList.add("dark")
-    myNavbar.classList.remove("navbar-dark")
-    myNavbar.classList.remove("bg-dark")
-    myNavbar.classList.add("navbar-light")
-    myNavbar.classList.add("bg-light")
-    tombolMode.classList.remove("text-light")
-    tombolMode.classList.add("text-dark")
-    modeSiang.style.display = "block"
-    modeMalam.style.display = "none"
+    body.classList.add("dark");
+    myNavbar.classList.remove("navbar-dark");
+    myNavbar.classList.remove("bg-dark");
+    myNavbar.classList.add("navbar-light");
+    myNavbar.classList.add("bg-light");
+    tombolMode.classList.remove("text-light");
+    tombolMode.classList.add("text-dark");
+    modeSiang.style.display = "block";
+    modeMalam.style.display = "none";
+    popupContent.classList.add("text-dark")
 }
 
 const popup = document.querySelector('.popup');
-const x = document.querySelector('.popup-content h1')
+const x = document.querySelector('.popup-content h1');
 
 window.addEventListener('load', () => {
     popup.classList.add('showPopup');
@@ -47,116 +49,116 @@ const BtnNext = () => {
     popup.classList.remove('showPopup');
     popup.childNodes[1].classList.remove('showPopup');
     window.location = "index.html#halaman-pengumuman";
-}
+    }
 
-const listArsipJuli = document.getElementById("list-arsip-juli")
-const listButtonJuli = document.getElementById("list-button-juli")
-const listButtonJuliTutup = document.getElementById("list-button-juli-tutup")
-const listArsipAgust = document.getElementById("list-arsip-agustus")
-const listButtonAgust = document.getElementById("list-button-agustus")
-const listButtonAgustTutup = document.getElementById("list-button-agustus-tutup")
-const listArsipSept = document.getElementById("list-arsip-september")
-const listButtonSept = document.getElementById("list-button-september")
-const listButtonSeptTutup = document.getElementById("list-button-september-tutup")
-const listArsipOktober = document.getElementById("list-arsip-oktober")
-const listButtonOktober = document.getElementById("list-button-oktober")
-const listButtonOktoberTutup = document.getElementById("list-button-oktober-tutup")
-const listArsipNovember = document.getElementById("list-arsip-november")
-const listButtonNovember = document.getElementById("list-button-november")
-const listButtonNovemberTutup = document.getElementById("list-button-november-tutup")
-const listArsipMaret23 = document.getElementById("list-arsip-maret-23")
-const listButtonMaret23 = document.getElementById("list-button-maret-23")
-const listButtonMaret23Tutup = document.getElementById("list-button-maret-23-tutup")
-const listArsipApril23 = document.getElementById("list-arsip-april-23")
-const listButtonApril23 = document.getElementById("list-button-april-23")
-const listButtonApril23Tutup = document.getElementById("list-button-april-23-tutup")
+// const listArsipJuli = document.getElementById("list-arsip-juli");
+// const listButtonJuli = document.getElementById("list-button-juli");
+// const listButtonJuliTutup = document.getElementById("list-button-juli-tutup");
+// const listArsipAgust = document.getElementById("list-arsip-agustus");
+// const listButtonAgust = document.getElementById("list-button-agustus");
+// const listButtonAgustTutup = document.getElementById("list-button-agustus-tutup");
+// const listArsipSept = document.getElementById("list-arsip-september");
+// const listButtonSept = document.getElementById("list-button-september");
+// const listButtonSeptTutup = document.getElementById("list-button-september-tutup");
+// const listArsipOktober = document.getElementById("list-arsip-oktober");
+// const listButtonOktober = document.getElementById("list-button-oktober");
+// const listButtonOktoberTutup = document.getElementById("list-button-oktober-tutup");
+// const listArsipNovember = document.getElementById("list-arsip-november");
+// const listButtonNovember = document.getElementById("list-button-november");
+// const listButtonNovemberTutup = document.getElementById("list-button-november-tutup");
+// const listArsipMaret23 = document.getElementById("list-arsip-maret-23");
+// const listButtonMaret23 = document.getElementById("list-button-maret-23");
+// const listButtonMaret23Tutup = document.getElementById("list-button-maret-23-tutup");
+// const listArsipApril23 = document.getElementById("list-arsip-april-23");
+// const listButtonApril23 = document.getElementById("list-button-april-23");
+// const listButtonApril23Tutup = document.getElementById("list-button-april-23-tutup");
 
 
-const tampilkanFileAmanat = document.getElementById("amanat-mentri-sosial-RI")
+// const tampilkanFileAmanat = document.getElementById("amanat-mentri-sosial-RI");
 
-const ListArsipJuli = () => {
-    listArsipJuli.style.display = "block"
-    listButtonJuli.style.display = "none"
-    listButtonJuliTutup.style.display = "inline-block"
-}
+// const ListArsipJuli = () => {
+//     listArsipJuli.style.display = "block";
+//     listButtonJuli.style.display = "none";
+//     listButtonJuliTutup.style.display = "inline-block";
+// }
 
-const ListArsipJuliTutup = () => {
-    listArsipJuli.style.display = "none"
-    listButtonJuli.style.display = "inline-block"
-    listButtonJuliTutup.style.display = "none"
-}
+// const ListArsipJuliTutup = () => {
+//     listArsipJuli.style.display = "none";
+//     listButtonJuli.style.display = "inline-block";
+//     listButtonJuliTutup.style.display = "none";
+// }
 
-const ListArsipAgustus = () => {
-    listArsipAgust.style.display = "block"
-    listButtonAgust.style.display = "none"
-    listButtonAgustTutup.style.display = "inline-block"
-}
+// const ListArsipAgustus = () => {
+//     listArsipAgust.style.display = "block";
+//     listButtonAgust.style.display = "none";
+//     listButtonAgustTutup.style.display = "inline-block";
+// }
 
-const ListArsipAgustusTutup = () => {
-    listArsipAgust.style.display = "none"
-    listButtonAgust.style.display = "inline-block"
-    listButtonAgustTutup.style.display = "none"
-}
+// const ListArsipAgustusTutup = () => {
+//     listArsipAgust.style.display = "none";
+//     listButtonAgust.style.display = "inline-block";
+//     listButtonAgustTutup.style.display = "none";
+// }
 
-const ListArsipSeptember = () => {
-    listArsipSept.style.display = "block";
-    listButtonSept.style.display = "none";
-    listButtonSeptTutup.style.display = "inline-block";
-}
+// const ListArsipSeptember = () => {
+//     listArsipSept.style.display = "block";
+//     listButtonSept.style.display = "none";
+//     listButtonSeptTutup.style.display = "inline-block";
+// }
 
-const ListArsipSeptemberTutup = () => {
-    listArsipSept.style.display = "none";
-    listButtonSept.style.display = "inline-block";
-    listButtonSeptTutup.style.display = "none";
-}
+// const ListArsipSeptemberTutup = () => {
+//     listArsipSept.style.display = "none";
+//     listButtonSept.style.display = "inline-block";
+//     listButtonSeptTutup.style.display = "none";
+// }
 
-const ListArsipOktober = () => {
-    listArsipOktober.style.display = "block";
-    listButtonOktober.style.display = "none";
-    listButtonOktoberTutup.style.display = "inline-block"
-}
+// const ListArsipOktober = () => {
+//     listArsipOktober.style.display = "block";
+//     listButtonOktober.style.display = "none";
+//     listButtonOktoberTutup.style.display = "inline-block";
+// }
 
-const ListArsipOktoberTutup = () => {
-    listArsipOktober.style.display = "none";
-    listButtonOktober.style.display = "inline-block";
-    listButtonOktoberTutup.style.display = "none";
-}
+// const ListArsipOktoberTutup = () => {
+//     listArsipOktober.style.display = "none";
+//     listButtonOktober.style.display = "inline-block";
+//     listButtonOktoberTutup.style.display = "none";
+// }
 
-const ListArsipNovember = () => {
-    listArsipNovember.style.display = "block";
-    listButtonNovember.style.display = "none";
-    listButtonNovemberTutup.style.display = "inline-block";
-}
+// const ListArsipNovember = () => {
+//     listArsipNovember.style.display = "block";
+//     listButtonNovember.style.display = "none";
+//     listButtonNovemberTutup.style.display = "inline-block";
+// }
 
-const ListArsipNovemberTutup = () => {
-    listArsipNovember.style.display = "none";
-    listButtonNovember.style.display = "inline-block";
-    listButtonNovemberTutup.style.display = "none";
-}
+// const ListArsipNovemberTutup = () => {
+//     listArsipNovember.style.display = "none";
+//     listButtonNovember.style.display = "inline-block";
+//     listButtonNovemberTutup.style.display = "none";
+// }
 
-const ListArsipMaret23 = () => {
-    listArsipMaret23.style.display = "block";
-    listButtonMaret23.style.display = "none";
-    listButtonMaret23Tutup.style.display = "inline-block";
-}
+// const ListArsipMaret23 = () => {
+//     listArsipMaret23.style.display = "block";
+//     listButtonMaret23.style.display = "none";
+//     listButtonMaret23Tutup.style.display = "inline-block";
+// }
 
-const ListArsipMaret23Tutup = () => {
-    listArsipMaret23.style.display = "none";
-    listButtonMaret23.style.display = "inline-block";
-    listButtonMaret23Tutup.style.display = "none";
-}
+// const ListArsipMaret23Tutup = () => {
+//     listArsipMaret23.style.display = "none";
+//     listButtonMaret23.style.display = "inline-block";
+//     listButtonMaret23Tutup.style.display = "none";
+// }
 
-const ListArsipApril23 = () => {
-    listArsipApril23.style.display = "block";
-    listButtonApril23.style.display = "none";
-    listButtonApril23Tutup.style.display = "inline-block";
-}
+// const ListArsipApril23 = () => {
+//     listArsipApril23.style.display = "block";
+//     listButtonApril23.style.display = "none";
+//     listButtonApril23Tutup.style.display = "inline-block";
+// }
 
-const ListArsipApril23Tutup = () => {
-    listArsipApril23.style.display = "none";
-    listButtonApril23.style.display = "inline-block";
-    listButtonApril23Tutup.style.display = "none";
-}
+// const ListArsipApril23Tutup = () => {
+//     listArsipApril23.style.display = "none";
+//     listButtonApril23.style.display = "inline-block";
+//     listButtonApril23Tutup.style.display = "none";
+// }
 
 const TampilAmanat = () => {
     tampilkanFileAmanat.style.display = "block"
