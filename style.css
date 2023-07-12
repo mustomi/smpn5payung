@@ -173,7 +173,7 @@
 }
 .popup h1 {
     position: absolute;
-    top: 2rem;
+    top: 1rem;
     right: 2rem;
     line-height: 1;
     cursor: pointer;
@@ -183,9 +183,29 @@
     transform: scale(.9);
 }
 
+.popup-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
 .showPopup {
     opacity: 1;
     transform: translateY(0);
     pointer-events: all;
 }
 
+.twibbon {
+    display: grid;
+    place-content: center;
+    text-align: center;
+}
+
+.twibbon img {
+    display: grid;
+    place-content: center;
+    width: clamp(150px, 75vw, 400px);
+    margin-bottom: 30px;
+}

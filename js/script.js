@@ -45,10 +45,9 @@ x.addEventListener('click', () => {
     popup.childNodes[1].classList.remove('showPopup');
     })
 
-const BtnNext = () => {
+const BtnClose = () => {
     popup.classList.remove('showPopup');
     popup.childNodes[1].classList.remove('showPopup');
-    window.location = "index.html#halaman-pengumuman";
     }
 
 // const listArsipJuli = document.getElementById("list-arsip-juli");
