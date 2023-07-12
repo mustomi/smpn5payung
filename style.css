@@ -200,12 +200,9 @@
 .twibbon {
     display: grid;
     place-content: center;
-    text-align: center;
 }
 
 .twibbon img {
-    display: grid;
-    place-content: center;
     width: clamp(150px, 75vw, 400px);
     margin-bottom: 30px;
 }
